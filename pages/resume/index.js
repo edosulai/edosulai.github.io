@@ -31,7 +31,7 @@ export default function Resume() {
           </span>
         </Link>
       </div>
-      <span>Last Updated Mei 4, 2023</span>
+      <span>Last Updated May 4, 2023</span>
       <div className="mt-16 container">
         <svg viewBox="0 0 595 842" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width={595} height={842} fill="#F0F0F0" />
