@@ -5,7 +5,8 @@ import { useEffect } from 'react'
 import fs from 'fs'
 import path from 'path'
 
-export async function getServerSideProps() {
+// export async function getServerSideProps() {
+export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'public', 'Edo Sulaiman - Full-Stack Developer.pdf');
   const fileData = fs.readFileSync(filePath);
 
