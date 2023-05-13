@@ -1,14 +1,16 @@
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
-import { useEffect } from 'react'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
+import { isBrowser } from 'react-device-detect'
 
 import fs from 'fs'
 import path from 'path'
 
 // export async function getServerSideProps() {
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'public', 'Edo Sulaiman - Full-Stack Developer.pdf');
-  const fileData = fs.readFileSync(filePath);
+  const filePath = path.join(process.cwd(), 'public', 'Edo Sulaiman - Full-Stack Developer.pdf')
+  const fileData = fs.readFileSync(filePath)
 
   return {
     props: {
@@ -20,6 +22,16 @@ export async function getStaticProps() {
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Resume({ buffer }) {
+  const router = useRouter()
+
+  if (!isBrowser) {
+    const link = document.createElement('a')
+    link.href = `data:application/pdf;base64,${buffer}`
+    link.setAttribute('download', 'Edo Sulaiman - Full-Stack Developer.pdf')
+    link.click()
+
+    router.push('/')
+  }
 
   useEffect(() => {
     document.body.className = 'overflow-hidden'
@@ -47,7 +59,7 @@ export default function Resume({ buffer }) {
 
         <button
           onClick={() => {
-            history.back()
+            router.push('/')
           }}
           className="fixed -left-10 -top-10 flex w-20 h-20 rounded-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-600 dark:bg-zinc-600 dark:from-inherit"
         >
@@ -58,12 +70,9 @@ export default function Resume({ buffer }) {
           </span>
         </button>
       </div>
-      <span className='h-12 flex items-center'>Last Updated May 11, 2023</span>
+      <span className='h-12 flex items-center'>Last Updated May 13, 2023</span>
       <div className="flex justify-center w-full h-screen overflow-hidden">
-        <iframe
-          className="w-full h-screen"
-          src={`data:application/pdf;base64,${buffer}`}
-        />
+        <iframe className="w-full h-screen" src={`data:application/pdf;base64,${buffer}`} />
       </div>
     </main>
   )
