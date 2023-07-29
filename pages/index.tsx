@@ -14,7 +14,7 @@ export default function Home() {
           </Link>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          Hi😁, I'm Edo Sulaiman
+          Hi😁, I&apos;m Edo Sulaiman
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export default function Home() {
       before:from-[#FF0000]/40
       before:to-[#66B3FF]/40
       before:animate-[blob_7s_infinite]
-      before:[animation-delay:_2s]
+      before:[animation-delay:_0s]
 
       after:absolute
       after:-z-50
@@ -49,14 +49,12 @@ export default function Home() {
       after:to-[#66B3FF]/40
       after:from-[#9CCC65]/40
       after:animate-[blob_7s_infinite]
-      after:[animation-delay:_4s]
+      after:[animation-delay:_2s]
 
       ">
         <div className="relative drop-shadow-[0_0_0.3rem_#00000070] dark:drop-shadow-[0_0_0.3rem_#ffffff70] text-center">
           <div className="relative ">
-            <h1 className="yyyyyyyy
-            relative text-9xl -tracking-[0.75rem] font-sans font-bold [text-shadow:_-8px_0_0_#ADD8E6] dark:[text-shadow:_-8px_0_0_#66B3FF]
-            ">
+            <h1 className="relative text-9xl -tracking-[0.75rem] font-sans font-bold [text-shadow:_-8px_0_0_#ADD8E6] dark:[text-shadow:_-8px_0_0_#66B3FF]">
               <span>5</span>
               <span>0</span>
               <span>3</span>

@@ -7,7 +7,10 @@ import { isBrowser } from 'react-device-detect'
 import fs from 'fs'
 import path from 'path'
 
-// export async function getServerSideProps() {
+interface ResumeProps {
+  buffer: string;
+}
+
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), 'public', 'Edo Sulaiman - Full-Stack Developer.pdf')
   const fileData = fs.readFileSync(filePath)
@@ -21,7 +24,7 @@ export async function getStaticProps() {
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Resume({ buffer }) {
+export default function Resume({ buffer }: ResumeProps) {
   const router = useRouter()
 
   if (!isBrowser) {
@@ -58,9 +61,7 @@ export default function Resume({ buffer }) {
         </Link>
 
         <button
-          onClick={() => {
-            router.push('/')
-          }}
+          onClick={() => router.push('/')}
           className="fixed -left-10 -top-10 flex w-20 h-20 rounded-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-600 dark:bg-zinc-600 dark:from-inherit"
         >
           <span className="relative -bottom-11 -right-4">
@@ -70,7 +71,7 @@ export default function Resume({ buffer }) {
           </span>
         </button>
       </div>
-      <span className='h-12 flex items-center'>Last Updated May 13, 2023</span>
+      <span className='h-12 flex items-center'>Last Updated July 29, 2023</span>
       <div className="flex justify-center w-full h-screen overflow-hidden">
         <iframe className="w-full h-screen" src={`data:application/pdf;base64,${buffer}`} />
       </div>
