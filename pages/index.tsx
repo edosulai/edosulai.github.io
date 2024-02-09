@@ -1,9 +1,34 @@
-import { Inter } from 'next/font/google'
-import Link from 'next/link'
+import { SocialLink } from '@/components';
+import { Inter } from 'next/font/google';
+import Link from 'next/link';
+import { useMemo } from 'react';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const socialLinks = useMemo(() => [
+    {
+      href: "https://instagram.com/edosulai",
+      title: "Instagram",
+      username: "@edosulai"
+    },
+    {
+      href: "https://linkedin.com/in/edosulaiman",
+      title: "Linkedin",
+      username: "linkedin.com/in/edosulaiman"
+    },
+    {
+      href: "https://github.com/edosulai",
+      title: "Github",
+      username: "github.com/edosulai"
+    },
+    {
+      href: "mailto:edosulai@icloud.com",
+      title: "Email",
+      username: "edosulai@icloud.com"
+    }
+  ], []);
+
   return (
     <main className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}>
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
@@ -67,73 +92,14 @@ export default function Home() {
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://instagram.com/edosulai"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Instagram{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            @edosulai
-          </p>
-        </a>
-
-        <a
-          href="https://linkedin.com/in/edosulaiman"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Linkedin{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            linkedin.com/in/edosulaiman
-          </p>
-        </a>
-
-        <a
-          href="https://github.com/edosulai"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Github{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            github.com/edosulai
-          </p>
-        </a>
-
-        <a
-          href="mailto:edosulaii@gmail.com"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Email{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            edosulaii@gmail.com
-          </p>
-        </a>
+        {socialLinks.map((link, index) => (
+          <SocialLink
+            key={index}
+            href={link.href}
+            title={link.title}
+            username={link.username}
+          />
+        ))}
       </div>
     </main>
   )

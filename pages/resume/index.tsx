@@ -1,40 +1,31 @@
+import { RESUME_FILE_NAME } from '@/constants'
+import fs from 'fs'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
-import { isBrowser } from 'react-device-detect'
-
-import fs from 'fs'
 import path from 'path'
+import { useEffect } from 'react'
 
 interface ResumeProps {
-  buffer: string;
+  lastModified: string;
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'public', 'Edo Sulaiman - Full-Stack Developer.pdf')
-  const fileData = fs.readFileSync(filePath)
+  const filePath = path.join(process.cwd(), 'public', RESUME_FILE_NAME)
+  const fileStats = fs.statSync(filePath)
+  const lastModified = fileStats.mtime.toISOString()
 
   return {
     props: {
-      buffer: Buffer.from(fileData).toString('base64')
+      lastModified
     }
   }
 }
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Resume({ buffer }: ResumeProps) {
+export default function Resume({ lastModified }: ResumeProps) {
   const router = useRouter()
-
-  if (!isBrowser) {
-    const link = document.createElement('a')
-    link.href = `data:application/pdf;base64,${buffer}`
-    link.setAttribute('download', 'Edo Sulaiman - Full-Stack Developer.pdf')
-    link.click()
-
-    router.push('/')
-  }
 
   useEffect(() => {
     document.body.className = 'overflow-hidden'
@@ -48,7 +39,7 @@ export default function Resume({ buffer }: ResumeProps) {
     <main className={`flex flex-col items-center justify-between ${inter.className}`}>
       <div className="z-10 w-full items-center justify-between font-mono text-sm">
         <Link
-          href={`/Edo Sulaiman - Full-Stack Developer.pdf`}
+          href={`/${RESUME_FILE_NAME}`}
           className="fixed -right-10 -top-10 flex w-20 h-20 rounded-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-600 dark:bg-zinc-600 dark:from-inherit"
           target="_blank"
           rel="noopener noreferrer"
@@ -71,9 +62,11 @@ export default function Resume({ buffer }: ResumeProps) {
           </span>
         </button>
       </div>
-      <span className='h-12 flex items-center'>Last Updated July 29, 2023</span>
+      <span className='h-12 flex items-center'>
+        Last Updated {new Date(lastModified).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+      </span>
       <div className="flex justify-center w-full h-screen overflow-hidden">
-        <iframe className="w-full h-screen" src={`data:application/pdf;base64,${buffer}`} />
+        <iframe className="w-full h-screen" src={`/${RESUME_FILE_NAME}`} />
       </div>
     </main>
   )
