@@ -12,7 +12,7 @@ interface ResumeProps {
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'public', 'Edo Sulaiman - Full-Stack Developer.pdf')
+  const filePath = path.join(process.cwd(), 'public', 'Edo Sulaiman - Full-Stack Engineer.pdf')
   const fileData = fs.readFileSync(filePath)
 
   return {
@@ -30,7 +30,7 @@ export default function Resume({ buffer }: ResumeProps) {
   if (!isBrowser) {
     const link = document.createElement('a')
     link.href = `data:application/pdf;base64,${buffer}`
-    link.setAttribute('download', 'Edo Sulaiman - Full-Stack Developer.pdf')
+    link.setAttribute('download', 'Edo Sulaiman - Full-Stack Engineer.pdf')
     link.click()
 
     router.push('/')
@@ -48,7 +48,7 @@ export default function Resume({ buffer }: ResumeProps) {
     <main className={`flex flex-col items-center justify-between ${inter.className}`}>
       <div className="z-10 w-full items-center justify-between font-mono text-sm">
         <Link
-          href={`/Edo Sulaiman - Full-Stack Developer.pdf`}
+          href={`/Edo Sulaiman - Full-Stack Engineer.pdf`}
           className="fixed -right-10 -top-10 flex w-20 h-20 rounded-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-600 dark:bg-zinc-600 dark:from-inherit"
           target="_blank"
           rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function Resume({ buffer }: ResumeProps) {
           </span>
         </button>
       </div>
-      <span className='h-12 flex items-center'>Last Updated July 29, 2023</span>
+      <span className='h-12 flex items-center'>Last Updated June 25, 2024</span>
       <div className="flex justify-center w-full h-screen overflow-hidden">
         <iframe className="w-full h-screen" src={`data:application/pdf;base64,${buffer}`} />
       </div>
