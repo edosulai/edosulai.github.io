@@ -75,7 +75,7 @@ Semua 4 design variant menggunakan konten yang sama. **Ini bukan biografi detail
 | III | Percikan | Curiosity first arrived through dismantled machines and unfinished experiments. Systems were learned by touch before they were understood by language. *But the seed was planted.* |
 | IV | Tercerahkan | Failed the test. **Found the direction.** Sometimes the door that closes shows you which wall to break. |
 | V | Mendaki | The climb began before institutions could name it. *Cum Laude.* When the world slowed down, the learning only accelerated for someone already fluent in solitude. Tags: Python, TensorFlow, Deep Learning |
-| VI | Dunia Nyata | **Banking-grade systems.** Payroll engines, mass transfers, encrypted pipelines. The village kid writing code that moves a nation's money. Sub: 3,500+ commits · Millions of transactions. Tags: Golang, React, gRPC, PostgreSQL, Microservices |
+| VI | Dunia Nyata | **Banking-grade systems.** Payroll engines, mass transfers, encrypted pipelines. The village kid writing code that moves a nation's money. Sub: 3,637 commits in 39 repos · Millions of transactions. Tags: Golang, React, gRPC, PostgreSQL, Microservices |
 | VII | Visi | An AI-first company. Systems that run themselves. **Humans ideate. AI builds. AI ships.** |
 | VIII | Kembali ke Tanah | A house near the ocean. Green everywhere. Technology running silently — **like invisible magic.** Only the waves are heard. Closing: *But this time — with wings.* |
 
@@ -144,7 +144,7 @@ Semua file ada di root repo sebagai standalone HTML previews. Buka langsung di b
 
 ### BRI — QLola / QCash (Jun 2023 ~ Feb 2025)
 - Under: Steradian → KSPS (vendor)
-- 3,500+ commits across 525 repos
+- 3,637 commits across 39 repos (within the 525-repo QCash ecosystem)
 - Full-stack: React/Next.js frontend, Golang backend
 - Key: Payroll Transfer, Mass Transfer SWIFT/BIFast, GnuPG encryption
 - Tech: React, Next.js, Golang, gRPC/Protobuf, PostgreSQL, SFTP, Docker, micro-frontend
@@ -167,7 +167,7 @@ Semua file ada di root repo sebagai standalone HTML previews. Buka langsung di b
 
 ### Pinturakik — Momena (2025 ~ Present)
 - Personal company, AI-first automation platform
-- 113 commits across 8 repos
+- 126 commits across 8 repos
 - AI context system, Linear integration, health check automation
 - Tech: Golang, Protobuf, AI/LLM, Android (Kotlin), iOS (Swift)
 

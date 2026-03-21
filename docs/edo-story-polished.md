@@ -127,7 +127,7 @@ Apa yang dikerjakan bukan main-main:
 - **Enkripsi file dengan GnuPG** — pipeline pemrosesan file dengan keamanan tingkat perbankan.
 - **Protobuf schema management** — mendefinisikan kontrak komunikasi antar-service.
 
-3,500+ commits di 525 repository. Bukan angka yang dibuat-buat — itu jejak digital dari satu setengah tahun menuliskan kode yang memindahkan uang rakyat.
+3,637 commits di 39 repository dalam ecosystem QCash yang berisi 525 repo. Bukan angka yang dibuat-buat — itu jejak digital dari satu setengah tahun menuliskan kode yang memindahkan uang rakyat.
 
 ### Kreditplus — KB FMF (Juli 2025 ~ Januari 2026)
 
@@ -154,7 +154,7 @@ Mobile: React Native 0.83, TypeScript, Redux, Datadog monitoring, CodePush OTA. 
 
 Ini bukan proyek klien. Ini **mimpinya sendiri.**
 
-Pinturakik adalah perusahaan AI-first automation yang sedang dibangun. Produknya, Momena, adalah platform yang memigrasikan sistem apapun menjadi AI-first. 113 commits di 8 repository: AI context management, Linear integration, health check automation, service boilerplate, Go toolkit library, mobile apps (Kotlin + Swift), protobuf definitions.
+Pinturakik adalah perusahaan AI-first automation yang sedang dibangun. Produknya, Momena, adalah platform yang memigrasikan sistem apapun menjadi AI-first. 126 commits di 8 repository: AI context management, Linear integration, health check automation, service boilerplate, Go toolkit library, mobile apps (Kotlin + Swift), protobuf definitions.
 
 Visinya? Sebuah perusahaan konsultasi yang bisa — suatu hari nanti — **menjalankan negara swasta yang dipimpin oleh AGI.**
 

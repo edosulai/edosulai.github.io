@@ -89,7 +89,7 @@ Interpretasi kanonis: yang dicari adalah kebebasan, bukan kekayaan. Inti teganga
 - **Platform**: QCash / QLola — corporate cash management for BRI
 - **LinkedIn Title**: Full Stack Engineer | React.js & Flutter | Node.js & Golang
 - **LinkedIn About**: "With 2+ years of experience, I specialize in developing and optimizing scalable applications using microfrontend and microservices architectures."
-- **Total commits**: 3,500+ across 525 repositories
+- **Total commits**: 3,637 across 39 repositories (within the 525-repo QCash ecosystem)
 - **Top repos by commit count**:
   - addons-web-client (1,208 commits) — main frontend, React/Next.js
   - addons-payroll-service (623 commits) — Golang backend, gRPC/Protobuf, FTP, GnuPG
