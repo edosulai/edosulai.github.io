@@ -1,0 +1,122 @@
+{
+  "_meta": {
+    "source": "edo-knowledge",
+    "generated": "2026-03-23T08:28:20.775Z",
+    "warning": "This file is auto-generated. Do not edit manually."
+  },
+  "header": {
+    "name": "Edo Sulaiman",
+    "title": "Full-Stack Engineer | Backend & Frontend Engineer"
+  },
+  "contact": {
+    "website": "edosulai.github.io",
+    "email": "edosulai@icloud.com",
+    "phone": "+62 851 67 300 100",
+    "linkedin": "edosulaiman",
+    "location": "Ragunan, Jakarta"
+  },
+  "summary": "Full-Stack Engineer with 3+ years of experience building and optimizing banking-grade and finance-domain systems across frontend and backend layers. Strong in Golang, React, Next.js, microservices, microfrontend, distributed contracts, secure payment workflows, backend-heavy integrations, and architecture-alignment work. Currently focused on the BRI BRiSpot / BNS ecosystem, including service-contract alignment, protobuf standardization, and backend microservices integration.",
+  "experiences": [
+    {
+      "role": "Full-Stack Engineer",
+      "company": "Bank Rakyat Indonesia (BRiSpot / BNS)",
+      "dates": "January 2026 to Present",
+      "bullets": [
+        "Working on the BRiSpot new skin / BNS ecosystem across mobile-banking-adjacent and backend microservice environments",
+        "Contributed to centralized endpoint patterns, protobuf standardization, shared event contracts, and service-boundary alignment",
+        "Helped shape cleaner multi-repository integration patterns across services and external client layers"
+      ]
+    },
+    {
+      "role": "Golang Developer",
+      "company": "PT KB Finansia Multifinance (Kreditplus)",
+      "dates": "July 2025 to January 2026",
+      "bullets": [
+        "Contributed to backend delivery for finance-domain migration initiatives",
+        "Worked on migration-related backend changes, observability improvements, and backward-compatible API adaptation",
+        "Improved tracing, standardized error handling, and strengthened service reliability across account and transaction flows"
+      ]
+    },
+    {
+      "role": "Golang Developer",
+      "company": "SIGMATECH",
+      "dates": "July 2025 to January 2026",
+      "bullets": [
+        "Delivered Golang engineering work for the Kreditplus migration initiative",
+        "Supported backend modernization, service refinement, and migration-related adaptation work"
+      ]
+    },
+    {
+      "role": "Full-Stack Engineer",
+      "company": "Bank Rakyat Indonesia (via Steradian Data Optima)",
+      "dates": "May 2023 to July 2025",
+      "bullets": [
+        "Built and optimized systems for QLola Cash Management / QCash in a banking-grade environment",
+        "Contributed to payroll transfer, mass transfer, secure file handling, and distributed contract workflows",
+        "Worked across frontend and backend layers using React, Next.js, Golang, gRPC, PostgreSQL, and related platform tooling"
+      ]
+    },
+    {
+      "role": "Full-Stack Developer",
+      "company": "Steradian Data Optima",
+      "dates": "May 2023 to July 2025",
+      "bullets": [
+        "Delivered full-stack engineering work for BRI cash-management systems",
+        "Contributed to scalable microfrontend and microservices-based delivery across finance workflows"
+      ]
+    }
+  ],
+  "education": {
+    "school": "University of Putra Indonesia YPTK Padang",
+    "schoolUrl": "https://upiyptk.ac.id",
+    "period": "2018 - 2022",
+    "degree": "Bachelor of Computer Science",
+    "major": "Informatics Engineering",
+    "minor": "Artificial Intelligence | Deep Learning",
+    "gpa": "3.6"
+  },
+  "highlights": [
+    "3,637 commits across 39 repositories in the QLola / QCash ecosystem",
+    "Contributed to payroll transfer, mass transfer, encryption, and service-contract workflows in banking systems",
+    "Drove centralized contract and endpoint alignment patterns in BRiSpot / BNS through protobuf-based standardization",
+    "Developed and refined AI-first operating model foundations through internal platform and automation work"
+  ],
+  "coreSkills": [
+    "Golang",
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Microservices",
+    "Microfrontend",
+    "REST APIs",
+    "gRPC",
+    "Protocol Buffers",
+    "PostgreSQL",
+    "Redis",
+    "MongoDB",
+    "SQL Server",
+    "MySQL",
+    "Docker",
+    "OpenShift",
+    "Grafana",
+    "Kibana",
+    "Jenkins",
+    "Bamboo",
+    "Swagger",
+    "Distributed Systems",
+    "Secure Payment Systems",
+    "Backend Integrations"
+  ],
+  "techStack": {
+    "Languages and Frameworks": [
+      "Golang, TypeScript, JavaScript, Python, Dart, PHP, Rust",
+      "React, Next.js, React Native, Flutter, Django, Laravel, Express.js"
+    ],
+    "Architecture and Platforms": [
+      "Microservices, RESTful APIs, gRPC, microfrontend",
+      "PostgreSQL, MySQL, SQL Server, MongoDB, Redis, Elasticsearch",
+      "RabbitMQ, MinIO, Docker, OpenShift, Jenkins, Bamboo, Grafana, Kibana",
+      "Protocol Buffers, Swagger, GitHub, Bitbucket, Nx, Turborepo"
+    ]
+  }
+}
