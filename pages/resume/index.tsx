@@ -1,73 +1,145 @@
-import { RESUME_FILE_NAME } from '@/constants'
-import fs from 'fs'
-import { Inter } from 'next/font/google'
+import fs from 'node:fs'
+import path from 'node:path'
+
+import Head from 'next/head'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
-import path from 'path'
-import { useEffect } from 'react'
+import { useCallback } from 'react'
 
 interface ResumeProps {
-  lastModified: string;
+  cvStyles: string
+  cvBody: string
 }
 
 export async function getStaticProps() {
-  const filePath = path.join(process.cwd(), 'public', RESUME_FILE_NAME)
-  const fileStats = fs.statSync(filePath)
-  const lastModified = fileStats.mtime.toISOString()
+  const filePath = path.join(process.cwd(), 'public', 'resume.html')
+  const html = fs.readFileSync(filePath, 'utf-8')
+
+  const styleMatch = /<style>([\s\S]*?)<\/style>/.exec(html)
+  const bodyMatch = /<body>([\s\S]*?)<\/body>/.exec(html)
+
+  let cvStyles = styleMatch?.[1] || ''
+
+  // Remove global reset & body styles — Tailwind base handles these,
+  // and we use a wrapper div for the dark background + centering
+  cvStyles = cvStyles.replace(
+    /\/\* ===== RESET & BASE ===== \*\/[\s\S]*?(?=\/\* ===== CV CONTAINER)/,
+    ''
+  )
 
   return {
     props: {
-      lastModified
-    }
+      cvStyles,
+      cvBody: bodyMatch?.[1] || '',
+    },
   }
 }
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Resume({ lastModified }: ResumeProps) {
-  const router = useRouter()
-
-  useEffect(() => {
-    document.body.className = 'overflow-hidden'
-
-    return () => {
-      document.body.className = document.body.className.replace('overflow-hidden', '')
-    }
+export default function Resume({ cvStyles, cvBody }: Readonly<ResumeProps>) {
+  const handleDownload = useCallback(() => {
+    globalThis.print()
   }, [])
 
   return (
-    <main className={`flex flex-col items-center justify-between ${inter.className}`}>
-      <div className="z-10 w-full items-center justify-between font-mono text-sm">
-        <Link
-          href={`/${RESUME_FILE_NAME}`}
-          className="fixed -right-10 -top-10 flex w-20 h-20 rounded-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-600 dark:bg-zinc-600 dark:from-inherit"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="relative -bottom-11 -left-4">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
-            </svg>
-          </span>
-        </Link>
+    <>
+      <Head>
+        <title>Resume - Edo Sulaiman | Full-Stack Engineer</title>
+        <meta
+          name="description"
+          content="Experienced Full-Stack Engineer with expertise in microfrontend and microservices architectures."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Exo:wght@600;700&family=Cabin:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Metrophobic&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </Head>
 
-        <button
-          onClick={() => router.push('/')}
-          className="fixed -left-10 -top-10 flex w-20 h-20 rounded-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-600 dark:bg-zinc-600 dark:from-inherit"
+      {/* CV styles + print overrides */}
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+            ${cvStyles}
+
+            @media print {
+              @page { margin: 0; }
+              body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                background: none !important;
+              }
+              .cv-page-wrapper {
+                background: none !important;
+                padding: 0 !important;
+                min-height: auto !important;
+              }
+            }
+          `,
+        }}
+      />
+
+      {/* Back to Home — hidden when printing */}
+      <div className="print:hidden fixed top-6 left-6 z-50">
+        <Link
+          href="/"
+          className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white/80 bg-white/10 backdrop-blur-md rounded-full border border-white/20 hover:bg-white/20 transition-colors"
         >
-          <span className="relative -bottom-11 -right-4">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
-            </svg>
-          </span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3"
+            />
+          </svg>
+          Home
+        </Link>
+      </div>
+
+      {/* Download PDF — hidden when printing */}
+      <div className="print:hidden fixed top-6 right-6 z-50">
+        <button
+          onClick={handleDownload}
+          className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-[#408040]/80 backdrop-blur-md rounded-full border border-[#408040]/30 hover:bg-[#408040] transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-4 h-4"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+            />
+          </svg>
+          Download PDF
         </button>
       </div>
-      <span className='h-12 flex items-center'>
-        Last Updated {new Date(lastModified).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-      </span>
-      <div className="flex justify-center w-full h-screen overflow-hidden">
-        <iframe className="w-full h-screen" src={`/${RESUME_FILE_NAME}`} />
-      </div>
-    </main>
+
+      {/* CV Content */}
+      <div
+        className="cv-page-wrapper flex justify-center min-h-screen py-10"
+        style={{ background: 'rgba(30, 30, 30, 1)' }}
+        dangerouslySetInnerHTML={{ __html: cvBody }}
+      />
+    </>
   )
 }
