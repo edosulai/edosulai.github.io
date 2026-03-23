@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "edo-knowledge",
-    "generated": "2026-03-23T08:28:20.775Z",
+    "generated": "2026-03-23T17:15:27.995Z",
     "warning": "This file is auto-generated. Do not edit manually."
   },
   "header": {
@@ -79,7 +79,7 @@
     "3,637 commits across 39 repositories in the QLola / QCash ecosystem",
     "Contributed to payroll transfer, mass transfer, encryption, and service-contract workflows in banking systems",
     "Drove centralized contract and endpoint alignment patterns in BRiSpot / BNS through protobuf-based standardization",
-    "Developed and refined AI-first operating model foundations through internal platform and automation work"
+    "Built and refined AI-first operating model foundations through Pinturakik / Momena"
   ],
   "coreSkills": [
     "Golang",
