@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:pdf": "bash scripts/build-pdf.sh",
     "start": "next start",
     "lint": "next lint"
   },
