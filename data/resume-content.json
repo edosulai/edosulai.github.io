@@ -1,12 +1,12 @@
 {
   "_meta": {
     "source": "edo-knowledge",
-    "generated": "2026-03-24T01:35:45.836Z",
+    "generated": "2026-03-24T02:10:22.732Z",
     "warning": "This file is auto-generated. Do not edit manually."
   },
   "header": {
     "name": "Edo Sulaiman",
-    "title": "Full-Stack Engineer | Golang, Microservices, Distributed Systems, AI Engineering"
+    "title": "Full-Stack Engineer | Golang, Microservices, Distributed Systems"
   },
   "contact": {
     "website": "edosulai.github.io",
@@ -15,63 +15,40 @@
     "linkedin": "edosulaiman",
     "location": "Ragunan, Jakarta"
   },
-  "summary": "Full-Stack Engineer with 3+ years of experience building banking-grade distributed systems and AI-integrated architectures, with 4,300+ commits across 81+ repositories. Specializing in Golang, React, Next.js, microservices, distributed contracts, secure payment workflows, and architecture-alignment work. Currently focused on the BRI BRiSpot / BNS ecosystem and AI-first automation through context engineering and multi-agent orchestration.",
+  "summary": "Full-Stack Engineer with 3+ years of experience building banking-grade distributed systems and AI-integrated architectures across enterprise-scale multi-repository ecosystems. Specializing in Golang, React, Next.js, microservices, distributed contracts, secure payment workflows, and architecture-alignment work. Currently focused on the BRI BRiSpot / BNS ecosystem and AI-first automation through context engineering and multi-agent orchestration.",
   "experiences": [
     {
       "role": "Golang Developer",
-      "company": "Bank Rakyat Indonesia (via Indocyber Global Teknologi)",
+      "company": "Bank Rakyat Indonesia (BRiSpot / BNS), via Indocyber Global Teknologi",
       "dates": "January 2026 to Present",
       "bullets": [
-        "Working on the BRiSpot new skin / BNS ecosystem across mobile-banking-adjacent and backend microservice environments",
-        "Contributed to centralized endpoint patterns, protobuf standardization, shared event contracts, and service-boundary alignment",
-        "Helped shape cleaner multi-repository integration patterns across services and external client layers"
+        "Engineered backend microservices for the BRiSpot / BNS ecosystem across mobile-banking-adjacent environments",
+        "Drove migration from scattered DTOs to centralized protobuf contracts and established shared Kafka event repositories",
+        "Aligned service boundaries and integration patterns across 20+ repositories in the BNS ecosystem",
+        "Built centralized external service integration layers for CISO, Bristars, EDM, Zoloz, and OIDC services"
       ]
     },
     {
       "role": "Golang Developer",
-      "company": "Indocyber Global Teknologi",
-      "dates": "January 2026 to Present",
-      "bullets": [
-        "Delivered Golang engineering work for the BRiSpot / BNS ecosystem under Bank Rakyat Indonesia",
-        "Contributed to backend microservice delivery, contract standardization, and multi-repository alignment"
-      ]
-    },
-    {
-      "role": "Golang Developer",
-      "company": "PT KB Finansia Multifinance (via SIGMATECH)",
+      "company": "PT KB Finansia Multifinance (Kreditplus), via SIGMATECH",
       "dates": "July 2025 to January 2026",
       "bullets": [
-        "Contributed to backend delivery for finance-domain migration initiatives",
-        "Worked on migration-related backend changes, observability improvements, and backward-compatible API adaptation",
-        "Improved tracing, standardized error handling, and strengthened service reliability across account and transaction flows"
-      ]
-    },
-    {
-      "role": "Golang Developer",
-      "company": "SIGMATECH",
-      "dates": "July 2025 to January 2026",
-      "bullets": [
-        "Delivered Golang engineering work for the Kreditplus migration initiative",
-        "Supported backend modernization, service refinement, and migration-related adaptation work"
+        "Delivered backend systems for finance-domain database migration from SQL Server and MySQL to PostgreSQL",
+        "Maintained backward-compatible APIs while adapting business logic for PostgreSQL schema differences",
+        "Strengthened observability through request tracing, standardized error payloads, and 75%+ unit test coverage",
+        "Supported account, transaction, and insurance-related service flows with reliability improvements"
       ]
     },
     {
       "role": "Full-Stack Engineer",
-      "company": "Bank Rakyat Indonesia (via Steradian Data Optima)",
+      "company": "Bank Rakyat Indonesia (QLola Cash Management / QCash), via Steradian Data Optima",
       "dates": "May 2023 to July 2025",
       "bullets": [
-        "Built and optimized systems for QLola Cash Management / QCash in a banking-grade environment",
-        "Contributed to payroll transfer, mass transfer, secure file handling, and distributed contract workflows",
-        "Worked across frontend and backend layers using React, Next.js, Golang, gRPC, PostgreSQL, and related platform tooling"
-      ]
-    },
-    {
-      "role": "Full-Stack Developer",
-      "company": "Steradian Data Optima",
-      "dates": "May 2023 to July 2025",
-      "bullets": [
-        "Delivered full-stack engineering work for BRI cash-management systems",
-        "Contributed to scalable microfrontend and microservices-based delivery across finance workflows"
+        "Built and optimized enterprise cash management systems using React, Next.js, Golang, gRPC, and PostgreSQL",
+        "Developed payroll transfer features including mass transfer, multi-currency international transfers, and bulk upload",
+        "Implemented GnuPG and AES 128/256 encryption for secure payroll file handling and reporting",
+        "Migrated logging infrastructure from logrus to zap with Fluentbit and Kibana integration",
+        "Architected microfrontend migration and optimized data access by replacing GORM with native SQL queries"
       ]
     }
   ],
@@ -85,10 +62,10 @@
     "gpa": "3.6"
   },
   "highlights": [
-    "3,637 commits across 39 repositories in the QLola / QCash ecosystem",
-    "Contributed to payroll transfer, mass transfer, encryption, and service-contract workflows in banking systems",
-    "Drove centralized contract and endpoint alignment patterns in BRiSpot / BNS through protobuf-based standardization",
-    "Built and refined AI-first operating model foundations through Pinturakik / Momena"
+    "Delivered enterprise systems across 80+ repositories spanning banking, finance, and AI domains",
+    "Engineered transaction-critical payroll, encryption, and mass transfer workflows for BRI's QLola / QCash platform",
+    "Drove protobuf standardization and endpoint alignment across 20+ repositories in BNS ecosystem",
+    "Building AI-first operating model — context engineering, governance, and multi-agent orchestration"
   ],
   "coreSkills": [
     "Golang",
@@ -118,8 +95,8 @@
   ],
   "techStack": {
     "Languages and Frameworks": [
-      "Golang, TypeScript, JavaScript, Python, Dart, PHP, Rust",
-      "React, Next.js, React Native, Flutter, Django, Laravel, Express.js"
+      "Golang, TypeScript, JavaScript, Python",
+      "React, Next.js, React Native, Django, Express.js"
     ],
     "Architecture and Platforms": [
       "Microservices, RESTful APIs, gRPC, microfrontend",
