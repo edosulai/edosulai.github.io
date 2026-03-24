@@ -36,7 +36,10 @@ export async function getStaticProps() {
 
 export default function Resume({ cvStyles, cvBody }: Readonly<ResumeProps>) {
   const handleDownload = useCallback(() => {
-    globalThis.print()
+    const link = document.createElement('a')
+    link.href = '/resume.pdf'
+    link.download = 'Edo_Sulaiman_CV.pdf'
+    link.click()
   }, [])
 
   return (
