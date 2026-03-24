@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "edo-knowledge",
-    "generated": "2026-03-24T00:39:04.344Z",
+    "generated": "2026-03-24T00:49:37.758Z",
     "warning": "This file is auto-generated. Do not edit manually."
   },
   "header": {
@@ -127,7 +127,6 @@
       "RabbitMQ, MinIO, Docker, OpenShift, Jenkins, Bamboo, Grafana, Kibana",
       "Protocol Buffers, Swagger, GitHub, Bitbucket, Nx, Turborepo",
       "Indonesia (Native Speaker)",
-      "Minang (Conversational)",
       "English (Working Proficiency)"
     ]
   }
