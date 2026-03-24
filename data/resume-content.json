@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "edo-knowledge",
-    "generated": "2026-03-24T00:24:47.941Z",
+    "generated": "2026-03-24T00:45:14.478Z",
     "warning": "This file is auto-generated. Do not edit manually."
   },
   "header": {
@@ -15,7 +15,7 @@
     "linkedin": "edosulaiman",
     "location": "Ragunan, Jakarta"
   },
-  "summary": "Full-Stack Engineer with 3+ years of experience building and optimizing banking-grade and finance-domain systems across frontend and backend layers. Strong in Golang, React, Next.js, microservices, microfrontend, distributed contracts, secure payment workflows, backend-heavy integrations, and architecture-alignment work. Currently focused on the BRI BRiSpot / BNS ecosystem, including service-contract alignment, protobuf standardization, and backend microservices integration.",
+  "summary": "Full-Stack Engineer with 3+ years of experience building banking-grade distributed systems and AI-integrated architectures, with 4,300+ commits across 81+ repositories. Specializing in Golang, React, Next.js, microservices, distributed contracts, secure payment workflows, and architecture-alignment work. Currently focused on the BRI BRiSpot / BNS ecosystem and AI-first automation through context engineering and multi-agent orchestration.",
   "experiences": [
     {
       "role": "Golang Developer",
@@ -125,7 +125,10 @@
       "Microservices, RESTful APIs, gRPC, microfrontend",
       "PostgreSQL, MySQL, SQL Server, MongoDB, Redis, Elasticsearch",
       "RabbitMQ, MinIO, Docker, OpenShift, Jenkins, Bamboo, Grafana, Kibana",
-      "Protocol Buffers, Swagger, GitHub, Bitbucket, Nx, Turborepo"
+      "Protocol Buffers, Swagger, GitHub, Bitbucket, Nx, Turborepo",
+      "Indonesia (Native Speaker)",
+      "Minang (Conversational)",
+      "English (Working Proficiency)"
     ]
   }
 }
