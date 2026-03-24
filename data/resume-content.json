@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "edo-knowledge",
-    "generated": "2026-03-23T23:53:08.575Z",
+    "generated": "2026-03-24T00:13:46.418Z",
     "warning": "This file is auto-generated. Do not edit manually."
   },
   "header": {
@@ -18,8 +18,8 @@
   "summary": "Full-Stack Engineer with 3+ years of experience building and optimizing banking-grade and finance-domain systems across frontend and backend layers. Strong in Golang, React, Next.js, microservices, microfrontend, distributed contracts, secure payment workflows, backend-heavy integrations, and architecture-alignment work. Currently focused on the BRI BRiSpot / BNS ecosystem, including service-contract alignment, protobuf standardization, and backend microservices integration.",
   "experiences": [
     {
-      "role": "Full-Stack Engineer",
-      "company": "Bank Rakyat Indonesia (BRiSpot / BNS)",
+      "role": "Golang Developer",
+      "company": "Bank Rakyat Indonesia, BRiSpot / BNS (via Indocyber Global Teknologi)",
       "dates": "January 2026 to Present",
       "bullets": [
         "Working on the BRiSpot new skin / BNS ecosystem across mobile-banking-adjacent and backend microservice environments",
@@ -29,7 +29,16 @@
     },
     {
       "role": "Golang Developer",
-      "company": "PT KB Finansia Multifinance (Kreditplus)",
+      "company": "Indocyber Global Teknologi",
+      "dates": "January 2026 to Present",
+      "bullets": [
+        "Delivered Golang engineering work for the BRiSpot / BNS ecosystem under Bank Rakyat Indonesia",
+        "Contributed to backend microservice delivery, contract standardization, and multi-repository alignment"
+      ]
+    },
+    {
+      "role": "Golang Developer",
+      "company": "PT KB Finansia Multifinance, Kreditplus (via SIGMATECH)",
       "dates": "July 2025 to January 2026",
       "bullets": [
         "Contributed to backend delivery for finance-domain migration initiatives",

@@ -31,8 +31,9 @@ function buildExperiencesHtml(experiences) {
   return experiences.map(exp => {
     // Build company link — use known URLs or omit href
     const companyUrls = {
-      'Bank Rakyat Indonesia (BRiSpot / BNS)': 'https://bri.co.id',
-      'PT KB Finansia Multifinance (Kreditplus)': 'https://www.kreditplus.com',
+      'Bank Rakyat Indonesia, BRiSpot / BNS (via Indocyber Global Teknologi)': 'https://bri.co.id',
+      'Indocyber Global Teknologi': 'https://indocyber.co.id',
+      'PT KB Finansia Multifinance, Kreditplus (via SIGMATECH)': 'https://www.kreditplus.com',
       'SIGMATECH': 'https://sigma-tech.co.id',
       'Bank Rakyat Indonesia (via Steradian Data Optima)': 'https://bri.co.id',
       'Steradian Data Optima': 'https://steradian.co.id',
