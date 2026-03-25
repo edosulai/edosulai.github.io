@@ -1,7 +1,7 @@
 # LinkedIn Profile Draft
 
 > Auto-generated from edo-knowledge. Review and paste manually into LinkedIn.
-> Generated: 2026-03-25T09:08:21.257Z
+> Generated: 2026-03-25T11:13:41.280Z
 
 ## Headline Options
 
