@@ -2,28 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* ═══ BASE ═══ */
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  color: #e5e5e5;
 }
 
 a {
@@ -36,5 +20,180 @@ a {
 }
 
 ::selection {
-  background: rgba(86, 123, 90, 0.18);
+  background: rgba(212, 165, 116, 0.25);
+}
+
+/* ═══ SCROLL CONTAINER ═══ */
+.scroll-container {
+  height: 100vh;
+  height: 100dvh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 0;
+}
+
+/* ═══ CHAPTERS ═══ */
+.chapter {
+  min-height: 100vh;
+  min-height: 100dvh;
+  scroll-snap-align: start;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ═══ FROSTED GLASS VARIANTS ═══ */
+.glass-frosted {
+  backdrop-filter: blur(24px) saturate(150%);
+  -webkit-backdrop-filter: blur(24px) saturate(150%);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+}
+
+.glass-clear {
+  backdrop-filter: blur(8px) saturate(200%);
+  -webkit-backdrop-filter: blur(8px) saturate(200%);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+}
+
+.glass-blur {
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+}
+
+/* ═══ CHAPTER BACKGROUNDS ═══ */
+.bg-prologue {
+  background: radial-gradient(ellipse at 30% 50%, #0a0a14 0%, #000000 80%);
+}
+
+.bg-origin {
+  background: linear-gradient(160deg, #0f0c07 0%, #1a1510 45%, #0f0a05 100%);
+}
+
+.bg-banking {
+  background: linear-gradient(160deg, #070d1a 0%, #0a1628 45%, #050a14 100%);
+}
+
+.bg-migration {
+  background: linear-gradient(160deg, #071a0f 0%, #0d2818 45%, #051408 100%);
+}
+
+.bg-architecture {
+  background: linear-gradient(160deg, #0d0a1a 0%, #1a1028 45%, #0a0814 100%);
+}
+
+.bg-future {
+  background: linear-gradient(160deg, #0f0a1a 0%, #1a0f28 45%, #0d0a18 100%);
+}
+
+.bg-stack {
+  background: linear-gradient(160deg, #0a0a0f 0%, #121218 45%, #0a0a0d 100%);
+}
+
+.bg-contact {
+  background: linear-gradient(160deg, #0f0c07 0%, #1a1510 45%, #0f0a05 100%);
+}
+
+/* ═══ DOT GRID PATTERN ═══ */
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* ═══ REVEAL ANIMATION ═══ */
+.reveal {
+  opacity: 0;
+}
+
+/* ═══ NOISE OVERLAY ═══ */
+.noise::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  opacity: 0.018;
+  pointer-events: none;
+  z-index: 100;
+  mix-blend-mode: overlay;
+  background: repeating-conic-gradient(rgba(255, 255, 255, 0.1) 0 25%, transparent 0 50%) 0 0 / 2px 2px;
+}
+
+/* ═══ PROGRESS BAR ═══ */
+.progress-bar {
+  transition: width 0.3s ease-out;
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 768px) {
+  /* Keep scroll-snap mandatory from base — each chapter = 1 viewport slide */
+  /* Keep min-height 100vh/100dvh from base — chapters fill viewport */
+
+  .chapter {
+    padding-top: 4rem;   /* clear fixed header */
+    padding-bottom: 1rem;
+  }
+
+  .chapter:first-child {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .glass-frosted,
+  .glass-clear {
+    border-radius: 16px;
+  }
+}
+
+/* ═══ PRINT ═══ */
+@media print {
+  html, body {
+    overflow: visible;
+    height: auto;
+    background: white;
+    color: black;
+  }
+
+  .scroll-container {
+    height: auto;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .chapter {
+    min-height: auto;
+    page-break-after: always;
+  }
+
+  .noise::after,
+  .progress-bar,
+  nav {
+    display: none;
+  }
+}
+
+/* ═══ REDUCED MOTION ═══ */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-container {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+  }
 }
