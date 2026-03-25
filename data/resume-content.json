@@ -1,7 +1,7 @@
 {
   "_meta": {
     "source": "edo-knowledge",
-    "generated": "2026-03-24T02:10:22.732Z",
+    "generated": "2026-03-25T09:08:21.258Z",
     "warning": "This file is auto-generated. Do not edit manually."
   },
   "header": {
@@ -15,7 +15,7 @@
     "linkedin": "edosulaiman",
     "location": "Ragunan, Jakarta"
   },
-  "summary": "Full-Stack Engineer with 3+ years of experience building banking-grade distributed systems and AI-integrated architectures across enterprise-scale multi-repository ecosystems. Specializing in Golang, React, Next.js, microservices, distributed contracts, secure payment workflows, and architecture-alignment work. Currently focused on the BRI BRiSpot / BNS ecosystem and AI-first automation through context engineering and multi-agent orchestration.",
+  "summary": "Full-Stack Engineer with 3+ years of experience building banking-grade distributed systems and AI-integrated architectures across enterprise-scale multi-repository ecosystems. Built from a long self-taught path into production work spanning Golang, React, Next.js, microservices, distributed contracts, secure payment workflows, and architecture-alignment efforts. Currently focused on the BRI BRiSpot / BNS ecosystem and AI-first automation through context engineering and multi-agent orchestration.",
   "experiences": [
     {
       "role": "Golang Developer",
@@ -63,6 +63,7 @@
   },
   "highlights": [
     "Delivered enterprise systems across 80+ repositories spanning banking, finance, and AI domains",
+    "Built a self-taught engineering path from non-traditional technology access into banking-grade production systems",
     "Engineered transaction-critical payroll, encryption, and mass transfer workflows for BRI's QLola / QCash platform",
     "Drove protobuf standardization and endpoint alignment across 20+ repositories in BNS ecosystem",
     "Building AI-first operating model — context engineering, governance, and multi-agent orchestration"
