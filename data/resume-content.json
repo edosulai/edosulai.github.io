@@ -1,12 +1,12 @@
 {
   "_meta": {
     "source": "edo-knowledge",
-    "generated": "2026-03-25T11:13:41.282Z",
+    "generated": "2026-03-26T00:59:29.349Z",
     "warning": "This file is auto-generated. Do not edit manually."
   },
   "header": {
     "name": "Edo Sulaiman",
-    "title": "Full-Stack Engineer | Golang, Microservices, Distributed Systems"
+    "title": "Full-Stack Engineer | React, Next.js, Golang, Microservices, Distributed Systems"
   },
   "contact": {
     "website": "edosulai.github.io",
@@ -15,7 +15,7 @@
     "linkedin": "edosulaiman",
     "location": "Ragunan, Jakarta"
   },
-  "summary": "Full-Stack Engineer with 3+ years of experience building banking-grade distributed systems and AI-integrated architectures across enterprise-scale multi-repository ecosystems. Built from a long self-taught path into production work spanning Golang, React, Next.js, microservices, distributed contracts, secure payment workflows, and architecture-alignment efforts. Currently focused on the BRI BRiSpot / BNS ecosystem and AI-first automation through context engineering and multi-agent orchestration.",
+  "summary": "Full-Stack Engineer with 3+ years of experience building enterprise-scale systems across frontend and backend — from React/Next.js microfrontend architectures and component-driven UI to Golang microservices, distributed contracts, and secure payment integrations. Led microfrontend migration at BRI QLola, built responsive enterprise dashboards, and engineered end-to-end transaction workflows across multi-repository ecosystems. Currently focused on the BRI BRiSpot / BNS ecosystem and AI-first automation through context engineering and multi-agent orchestration.",
   "experiences": [
     {
       "role": "Golang Developer",
@@ -44,11 +44,13 @@
       "company": "Bank Rakyat Indonesia (QLola Cash Management / QCash), via Steradian Data Optima",
       "dates": "May 2023 to July 2025",
       "bullets": [
-        "Built and optimized enterprise cash management systems using React, Next.js, Golang, gRPC, and PostgreSQL",
-        "Developed payroll transfer features including mass transfer, multi-currency international transfers, and bulk upload",
+        "Led frontend-heavy development of enterprise cash management UI using React, Next.js, and TypeScript across a 525-repo ecosystem",
+        "Architected and executed microfrontend migration using Module Federation, decomposing monolithic frontend into independently deployable micro-apps",
+        "Built component-driven UI with design system patterns, Storybook documentation, and responsive enterprise dashboards",
+        "Engineered state management architecture using Zustand and React Query for complex financial data flows",
+        "Developed full-stack payroll transfer features including mass transfer, multi-currency international transfers, and bulk upload",
         "Implemented GnuPG and AES 128/256 encryption for secure payroll file handling and reporting",
-        "Migrated logging infrastructure from logrus to zap with Fluentbit and Kibana integration",
-        "Architected microfrontend migration and optimized data access by replacing GORM with native SQL queries"
+        "Optimized data access by replacing GORM with native SQL queries and migrated logging from logrus to zap with Kibana integration"
       ]
     }
   ],
@@ -62,22 +64,28 @@
     "gpa": "3.6"
   },
   "highlights": [
+    "Led microfrontend architecture migration at BRI QLola — decomposed monolithic frontend into independently deployable micro-apps using Module Federation",
     "Delivered enterprise systems across 80+ repositories spanning banking, finance, and AI domains",
-    "Built a self-taught engineering path from non-traditional technology access into banking-grade production systems",
+    "Built responsive enterprise dashboards and component-driven UI for banking-grade cash management platform",
     "Engineered transaction-critical payroll, encryption, and mass transfer workflows for BRI's QLola / QCash platform",
     "Drove protobuf standardization and endpoint alignment across 20+ repositories in BNS ecosystem",
     "Building AI-first operating model — context engineering, governance, and multi-agent orchestration"
   ],
   "coreSkills": [
-    "Golang",
     "React",
     "Next.js",
     "TypeScript",
-    "Microservices",
+    "Golang",
     "Microfrontend",
+    "Module Federation",
+    "Microservices",
     "REST APIs",
     "gRPC",
     "Protocol Buffers",
+    "Zustand",
+    "React Query",
+    "Storybook",
+    "Tailwind CSS",
     "PostgreSQL",
     "Redis",
     "MongoDB",
@@ -92,15 +100,17 @@
     "Swagger",
     "Distributed Systems",
     "Secure Payment Systems",
-    "Backend Integrations"
+    "Component-Driven UI",
+    "Responsive Design"
   ],
   "techStack": {
     "Languages and Frameworks": [
-      "Golang, TypeScript, JavaScript, Python",
-      "React, Next.js, React Native, Django, Express.js"
+      "React, Next.js, TypeScript, JavaScript",
+      "Golang, Python, Django, Express.js, React Native"
     ],
     "Architecture and Platforms": [
-      "Microservices, RESTful APIs, gRPC, microfrontend",
+      "Microfrontend (Module Federation), Microservices, RESTful APIs, gRPC",
+      "Zustand, React Query, Storybook, Tailwind CSS",
       "PostgreSQL, MySQL, SQL Server, MongoDB, Redis, Elasticsearch",
       "RabbitMQ, MinIO, Docker, OpenShift, Jenkins, Bamboo, Grafana, Kibana",
       "Protocol Buffers, Swagger, GitHub, Bitbucket, Nx, Turborepo",
