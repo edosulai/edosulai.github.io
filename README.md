@@ -1,31 +1,39 @@
 # edosulai.github.io
 
-Personal portfolio — scroll-storytelling site built with Next.js, Tailwind CSS, and GSAP.
+Personal portfolio site with a cinematic scroll-storytelling experience and direct CV access.
 
 ## Stack
 
-- **Next.js 15** (static export)
-- **Tailwind CSS 3**
-- **GSAP** scroll-triggered animations
-- **TypeScript**
+- **Next.js 16** (static export target)
+- **React 19**
+- **Tailwind CSS 4** (CSS-first setup)
+- **TypeScript 6**
+- **GSAP** for reveal and scroll choreography
 
 ## Development
 
 ```bash
 npm install
-npm run dev        # dev server
-npm run build      # static export to out/
-npm run build:pdf  # generate resume.pdf from resume.html
+npm run dev
+npm run build
+npm run build:pdf
 ```
 
-## Structure
+## Project Surface
 
-```
-pages/index.tsx        # 8-chapter scroll-storytelling homepage
-pages/resume/          # resume viewer (loads resume.html)
-data/                  # site-content.json, resume-content.json
-styles/globals.css     # scroll-snap, glassmorphism, chapter backgrounds
-scripts/build-pdf.js   # PDF generation script
-public/resume.html     # resume HTML template
-public/resume.pdf      # generated CV
-```
+- `pages/index.tsx` -> 8-chapter storytelling homepage
+- `pages/resume/` -> in-site resume viewer
+- `data/site-content.json` -> portfolio narrative content
+- `data/resume-content.json` -> resume content source
+- `styles/globals.css` -> visual system, slide behavior, and motion styling
+- `public/resume.html` -> printable resume source
+- `public/resume.pdf` -> generated CV artifact
+
+## Deploy
+
+Deployment is automated via GitHub Actions to GitHub Pages.
+
+## Notes
+
+- This repository is the public portfolio surface.
+- Some enterprise implementation details remain private.
