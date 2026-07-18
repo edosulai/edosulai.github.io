@@ -38,8 +38,8 @@
       "description": "Led frontend-heavy development of enterprise cash management systems: microfrontend migration with Module Federation, responsive dashboards, payroll transfer and mass transfer workflows with secure file handling."
     },
     {
-      "title": "BRI Brilink + BRiSpot/BNS",
-      "description": "Building e-commerce microservices (NPSO catalog, cart, orders) in Go, Android mobile fast onboarding flow (KYB, eKYC, document upload) in Kotlin, and ASDP ticketing system. Previously: protobuf standardization, centralized endpoint patterns, and service boundary alignment across 20+ repositories in BNS ecosystem."
+      "title": "BRI BRILink Mobile + BRiSpot/BNS",
+      "description": "Building BRILink Mobile, BRI's agent banking app: e-commerce backend (NPSO catalog, cart, orders) in Go, Android fast onboarding (KYB, eKYC, document upload) in Kotlin, and ASDP ferry ticketing. Previously: protobuf standardization, centralized endpoint patterns, and service boundary alignment across 20+ repositories in the BRiSpot/BNS ecosystem."
     },
     {
       "title": "Kreditplus",

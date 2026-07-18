@@ -15,17 +15,17 @@
     "linkedin": "edosulaiman",
     "location": "Ragunan, Jakarta"
   },
-  "summary": "I deliver complete products (web, backend, mobile, infrastructure) at the speed of a small team. I built my own AI engineering system to make that possible. 3+ years shipping production systems in banking and finance (BRI, Kreditplus). I work across React, Go, Android, and cloud. What makes the pace possible is an AI system I built and maintain: model routing across providers, automated agents, persistent context across sessions and machines. Currently building e-commerce microservices, mobile onboarding, and ticketing systems at BRI Brilink.",
+  "summary": "I deliver complete products (web, backend, mobile, infrastructure) at the speed of a small team. I built my own AI engineering system to make that possible. 3+ years shipping production systems in banking and finance (BRI, Kreditplus). I work across React, Go, Android, and cloud. What makes the pace possible is an AI system I built and maintain: model routing across providers, automated agents, persistent context across sessions and machines. Currently building the BRILink Mobile platform (BRI's agent banking app): e-commerce, Android onboarding, and ferry ticketing.",
   "experiences": [
     {
       "role": "Golang Developer",
       "company": "Bank Rakyat Indonesia (Brilink), via Indocyber Global Teknologi",
       "dates": "April 2026 to Present",
       "bullets": [
-        "Built full NPSO e-commerce backend (catalog, cart, orders) in Go with Brimola architecture on Brigate integration layer",
-        "Developed Android Fast Onboarding v2 flow (KYB, eKYC, document upload, perjanjian kerjasama) in Kotlin with Hilt/Dagger",
-        "Engineered ASDP ticketing system with unit tests achieving 92%+ coverage",
-        "Delivered 387 commits across 3 repositories (micro-ecommerce, micro-ticket, brilinkmobile) in 4 months"
+        "Built full NPSO e-commerce backend (catalog, cart, orders) for the BRILink Mobile app in Go with Brimola architecture on Brigate integration layer",
+        "Developed Android Fast Onboarding v2 flow (KYB, eKYC, document upload, perjanjian kerjasama) for BRILink Mobile in Kotlin with Hilt/Dagger",
+        "Engineered ASDP ferry ticketing system for BRILink Mobile with unit tests achieving 92%+ coverage",
+        "Delivered 387 commits across 3 modules of the BRILink Mobile platform (e-commerce, ticketing, mobile app) in 4 months"
       ]
     },
     {
@@ -75,8 +75,8 @@
     "gpa": "3.6"
   },
   "highlights": [
-    "Delivered 387 commits across 3 repos in 4 months at BRI Brilink (Go + Android + ticketing)",
-    "Built full NPSO e-commerce backend (catalog, cart, orders) and ASDP ticketing with 92%+ test coverage",
+    "Delivered 387 commits across 3 modules of the BRILink Mobile platform in 4 months (Go backend + Kotlin Android + ticketing)",
+    "Built NPSO e-commerce backend and ASDP ferry ticketing for BRILink Mobile with 92%+ test coverage",
     "Led microfrontend architecture migration at BRI QLola using Module Federation",
     "Delivered enterprise systems across 80+ repositories spanning banking, finance, and AI domains",
     "Engineered transaction-critical payroll, encryption, and mass transfer workflows for BRI's QLola / QCash platform",
