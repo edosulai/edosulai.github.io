@@ -6,7 +6,7 @@
   },
   "header": {
     "name": "Edo Sulaiman",
-    "title": "Full-Stack Engineer | React, Next.js, Golang, Microservices, Distributed Systems"
+    "title": "Software Engineer | Full-Stack Product Delivery"
   },
   "contact": {
     "website": "edosulai.github.io",
@@ -15,12 +15,23 @@
     "linkedin": "edosulaiman",
     "location": "Ragunan, Jakarta"
   },
-  "summary": "Full-Stack Engineer with 3+ years of experience building enterprise-scale systems across frontend and backend — from React/Next.js microfrontend architectures and component-driven UI to Golang microservices, distributed contracts, and secure payment integrations. Led microfrontend migration at BRI QLola, built responsive enterprise dashboards, and engineered end-to-end transaction workflows across multi-repository ecosystems. Currently focused on the BRI BRiSpot / BNS ecosystem and AI-first automation through context engineering and multi-agent orchestration.",
+  "summary": "I deliver complete products (web, backend, mobile, infrastructure) at the speed of a small team. I built my own AI engineering system to make that possible. 3+ years shipping production systems in banking and finance (BRI, Kreditplus). I work across React, Go, Android, and cloud. What makes the pace possible is an AI system I built and maintain: model routing across providers, automated agents, persistent context across sessions and machines. Currently building e-commerce microservices, mobile onboarding, and ticketing systems at BRI Brilink.",
   "experiences": [
     {
       "role": "Golang Developer",
+      "company": "Bank Rakyat Indonesia (Brilink), via Indocyber Global Teknologi",
+      "dates": "April 2026 to Present",
+      "bullets": [
+        "Built full NPSO e-commerce backend (catalog, cart, orders) in Go with Brimola architecture on Brigate integration layer",
+        "Developed Android Fast Onboarding v2 flow (KYB, eKYC, document upload, perjanjian kerjasama) in Kotlin with Hilt/Dagger",
+        "Engineered ASDP ticketing system with unit tests achieving 92%+ coverage",
+        "Delivered 387 commits across 3 repositories (micro-ecommerce, micro-ticket, brilinkmobile) in 4 months"
+      ]
+    },
+    {
+      "role": "Golang Developer",
       "company": "Bank Rakyat Indonesia (BRiSpot / BNS), via Indocyber Global Teknologi",
-      "dates": "January 2026 to Present",
+      "dates": "January 2026 to March 2026",
       "bullets": [
         "Engineered backend microservices for the BRiSpot / BNS ecosystem across mobile-banking-adjacent environments",
         "Drove migration from scattered DTOs to centralized protobuf contracts and established shared Kafka event repositories",
@@ -64,12 +75,13 @@
     "gpa": "3.6"
   },
   "highlights": [
-    "Led microfrontend architecture migration at BRI QLola — decomposed monolithic frontend into independently deployable micro-apps using Module Federation",
+    "Delivered 387 commits across 3 repos in 4 months at BRI Brilink (Go + Android + ticketing)",
+    "Built full NPSO e-commerce backend (catalog, cart, orders) and ASDP ticketing with 92%+ test coverage",
+    "Led microfrontend architecture migration at BRI QLola using Module Federation",
     "Delivered enterprise systems across 80+ repositories spanning banking, finance, and AI domains",
-    "Built responsive enterprise dashboards and component-driven UI for banking-grade cash management platform",
     "Engineered transaction-critical payroll, encryption, and mass transfer workflows for BRI's QLola / QCash platform",
     "Drove protobuf standardization and endpoint alignment across 20+ repositories in BNS ecosystem",
-    "Building AI-first operating model — context engineering, governance, and multi-agent orchestration"
+    "Built custom AI infrastructure: personal model router, multi-agent orchestration, cross-machine context system"
   ],
   "coreSkills": [
     "React",

@@ -6,10 +6,10 @@
   },
   "hero": {
     "name": "Edo Sulaiman",
-    "headline": "Building enterprise-grade systems across the full stack.",
-    "subheadline": "Full-stack engineer bridging React/Next.js frontend architecture with Golang microservices, distributed contracts, and AI-first operations.",
-    "positioningStrip": "Frontend architecture. Distributed contracts. AI-first operations.",
-    "supportingLine": "From microfrontend migrations and responsive enterprise dashboards to secure transfer workflows and AI-first operating systems — I build systems that aim to become more reliable, more autonomous, and quiet enough to disappear into everyday life."
+    "headline": "I deliver complete products at the speed of a small team.",
+    "subheadline": "Software engineer. Web, backend, mobile, infrastructure. Powered by custom AI infrastructure I built and operate.",
+    "positioningStrip": "Full product delivery. AI-native workflow. Banking and finance.",
+    "supportingLine": "3+ years shipping production systems in banking and finance (BRI, Kreditplus). I work across React, Go, Android, and cloud. What makes the pace possible is an AI system I built and maintain: model routing, automated agents, persistent context across sessions and machines."
   },
   "highlights": [
     "~3 years of professional experience",
@@ -25,41 +25,45 @@
     "AI-first operations"
   ],
   "about": {
-    "sectionTitle": "From the edges of technology into systems that carry real weight — both frontend and backend.",
+    "sectionTitle": "From the edges of technology into systems that carry real weight.",
     "paragraphs": [
-      "I started from the edges of technology, between urban memory, village roots, warnets, second-hand PCs, failed early attempts, and a long self-taught path. That path eventually led me into banking-grade systems, finance-domain services, and architecture work spanning both frontend and backend — from microfrontend migrations and component-driven UI to distributed contracts, secure integrations, and system alignment.",
-      "Today, I work across the full stack: React/Next.js frontend architecture, Golang microservices, and distributed contracts. At BRI QLola, I spent more time on the frontend layer — leading microfrontend migration, building responsive enterprise dashboards, and engineering state management for complex financial workflows. I am especially interested in the point where implementation grows into architecture, and where software becomes reliable enough to fade into the background.",
+      "I started from the edges of technology, between urban memory, village roots, warnets, second-hand PCs, failed early attempts, and a long self-taught path. That path eventually led me into banking-grade systems, finance-domain services, and architecture work spanning web, backend, mobile, and infrastructure.",
+      "Today, I deliver complete products across whatever layer the product needs: React/Next.js, Golang microservices, Android mobile, cloud infrastructure. What makes the pace possible is an AI system I built and maintain: personal model routing across providers, automated browser and terminal agents, persistent context across sessions and machines.",
       "My long-term direction is AI-first systems: not AI as a side feature, but AI as an operational layer that reduces friction, preserves continuity, and moves routine execution away from humans."
     ]
   },
   "selectedWork": [
     {
-      "title": "QLola / QCash",
-      "description": "Led frontend-heavy development of enterprise cash management systems — architecting microfrontend migration with Module Federation, building responsive dashboards, and engineering state management with Zustand and React Query. Also built full-stack payroll transfer and mass transfer workflows with secure file handling."
+      "title": "BRI Brilink (Brimola / NPSO / ASDP)",
+      "description": "Building e-commerce microservices (NPSO catalog, cart, orders) in Go, Android mobile fast onboarding flow (KYB, eKYC, document upload) in Kotlin, and ASDP ticketing system with 92%+ test coverage."
     },
     {
       "title": "BRiSpot / BNS",
       "description": "Contributed to contract and integration alignment across a multi-repository ecosystem, including protobuf standardization, centralized endpoint patterns, and shared event-contract thinking."
     },
     {
+      "title": "QLola / QCash",
+      "description": "Led frontend-heavy development of enterprise cash management systems: microfrontend migration with Module Federation, responsive dashboards, payroll transfer and mass transfer workflows with secure file handling."
+    },
+    {
       "title": "Kreditplus",
       "description": "Worked on migration-oriented backend engineering with a focus on compatibility, observability, and service refinement in finance-domain systems."
     },
     {
-      "title": "Pinturakik / Momena",
+      "title": "Momena",
       "description": "Building the foundations for AI-first operating systems, including context continuity, governance logic, reusable workflows, and automation-first execution models."
     }
   ],
   "selectedWorkMeta": {
-    "sectionTitle": "Work shaped by enterprise UI architecture, service contracts, and long-horizon operating models.",
-    "sectionSubtitle": "The through-line is consistent: cleaner interfaces, stronger contracts, quieter systems, and better operational reliability."
+    "sectionTitle": "Work shaped by complete product delivery across banking, finance, and AI systems.",
+    "sectionSubtitle": "The through-line is consistent: ship the whole product, not just a layer."
   },
   "philosophy": {
     "sectionTitle": "The best systems stop asking for attention.",
     "body": "I care less about flashy software and more about systems that become trustworthy, calm, and almost invisible. The best technology does not demand constant attention. It carries complexity quietly."
   },
   "contact": {
-    "cta": "If you are building complex systems in finance, enterprise UI, infrastructure, or AI-first operations, I am interested in problems where frontend architecture, backend integration, and long-term system clarity have to meet.",
+    "cta": "If you need complete product delivery across web, backend, mobile, or AI-integrated systems, I am interested in problems where one engineer with the right infrastructure can replace a team.",
     "email": "edosulai@icloud.com"
   },
   "socialLinks": [
