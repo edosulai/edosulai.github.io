@@ -260,15 +260,15 @@ export default function Home() {
             </div>
             <div className="glass-frosted p-5 sm:p-8 md:p-12">
               <h2 className="reveal font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-2 leading-snug">
-                {experiences[2].role}
+                {experiences[3].role}
               </h2>
-              <p className="reveal font-mono text-xs text-blue-400/50 mb-1">{experiences[2].company}</p>
-              <p className="reveal font-mono text-xs text-white/25 mb-6">{experiences[2].dates}</p>
+              <p className="reveal font-mono text-xs text-blue-400/50 mb-1">{experiences[3].company}</p>
+              <p className="reveal font-mono text-xs text-white/25 mb-6">{experiences[3].dates}</p>
               <p className="reveal text-white/55 leading-relaxed mb-6 text-[15px]">
                 {selectedWork[0].description}
               </p>
               <ul className="space-y-3">
-                {experiences[2].bullets.map((b, i) => (
+                {experiences[3].bullets.map((b, i) => (
                   <li key={i} className="reveal flex gap-3 text-sm text-white/45">
                     <span className="text-blue-400/40 mt-0.5 shrink-0">▸</span>
                     <span>{b}</span>
@@ -289,15 +289,15 @@ export default function Home() {
             </div>
             <div className="glass-frosted p-5 sm:p-8 md:p-12">
               <h2 className="reveal font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-2 leading-snug">
-                {experiences[1].role}
+                {experiences[2].role}
               </h2>
-              <p className="reveal font-mono text-xs text-green-400/50 mb-1">{experiences[1].company}</p>
-              <p className="reveal font-mono text-xs text-white/25 mb-6">{experiences[1].dates}</p>
+              <p className="reveal font-mono text-xs text-green-400/50 mb-1">{experiences[2].company}</p>
+              <p className="reveal font-mono text-xs text-white/25 mb-6">{experiences[2].dates}</p>
               <p className="reveal text-white/55 leading-relaxed mb-6 text-[15px]">
                 {selectedWork[2].description}
               </p>
               <ul className="space-y-3">
-                {experiences[1].bullets.map((b, i) => (
+                {experiences[2].bullets.map((b, i) => (
                   <li key={i} className="reveal flex gap-3 text-sm text-white/45">
                     <span className="text-green-400/40 mt-0.5 shrink-0">▸</span>
                     <span>{b}</span>
