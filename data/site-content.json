@@ -38,8 +38,8 @@
       "description": "Led frontend-heavy development of enterprise cash management systems: microfrontend migration with Module Federation, responsive dashboards, payroll transfer and mass transfer workflows with secure file handling."
     },
     {
-      "title": "BRI Brilink (Brimola / NPSO / ASDP)",
-      "description": "Building e-commerce microservices (NPSO catalog, cart, orders) in Go, Android mobile fast onboarding flow (KYB, eKYC, document upload) in Kotlin, and ASDP ticketing system with 92%+ test coverage."
+      "title": "BRI Brilink + BRiSpot/BNS",
+      "description": "Building e-commerce microservices (NPSO catalog, cart, orders) in Go, Android mobile fast onboarding flow (KYB, eKYC, document upload) in Kotlin, and ASDP ticketing system. Previously: protobuf standardization, centralized endpoint patterns, and service boundary alignment across 20+ repositories in BNS ecosystem."
     },
     {
       "title": "Kreditplus",
@@ -48,10 +48,6 @@
     {
       "title": "Momena",
       "description": "Building the foundations for AI-first operating systems, including context continuity, governance logic, reusable workflows, and automation-first execution models."
-    },
-    {
-      "title": "BRiSpot / BNS",
-      "description": "Contributed to contract and integration alignment across a multi-repository ecosystem, including protobuf standardization, centralized endpoint patterns, and shared event-contract thinking."
     }
   ],
   "selectedWorkMeta": {

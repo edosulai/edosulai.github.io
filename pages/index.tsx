@@ -320,8 +320,8 @@ export default function Home() {
               <h2 className="reveal font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-2 leading-snug">
                 {experiences[0].role}
               </h2>
-              <p className="reveal font-mono text-xs text-indigo-400/50 mb-1">{experiences[0].company}</p>
-              <p className="reveal font-mono text-xs text-white/25 mb-6">{experiences[0].dates}</p>
+              <p className="reveal font-mono text-xs text-indigo-400/50 mb-1">Bank Rakyat Indonesia, via Indocyber Global Teknologi</p>
+              <p className="reveal font-mono text-xs text-white/25 mb-6">January 2026 to Present</p>
               <p className="reveal text-white/55 leading-relaxed mb-6 text-[15px]">
                 {selectedWork[1].description}
               </p>
@@ -333,6 +333,18 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-8 pt-6 border-t border-white/5">
+                <p className="reveal font-mono text-xs text-indigo-400/30 mb-1">{experiences[1].company}</p>
+                <p className="reveal font-mono text-xs text-white/20 mb-4">{experiences[1].dates}</p>
+                <ul className="space-y-3">
+                  {experiences[1].bullets.map((b, i) => (
+                    <li key={i} className="reveal flex gap-3 text-sm text-white/40">
+                      <span className="text-indigo-400/30 mt-0.5 shrink-0">▸</span>
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </section>
