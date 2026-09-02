@@ -34,9 +34,22 @@
 /* ═══ BASE ═══ */
 html, body {
   height: 100%;
-  overflow: hidden;
   background: #000;
   color: #e5e5e5;
+}
+
+/* Snap-scroll lock is homepage-only. /resume is a long document and must
+   scroll + pinch-zoom; locking html/body there is what made it feel frozen. */
+html:has(.scroll-container),
+body:has(.scroll-container) {
+  overflow: hidden;
+}
+
+html:has(.cv-page-wrapper),
+body:has(.cv-page-wrapper) {
+  overflow: auto;
+  height: auto;
+  min-height: 100%;
 }
 
 a {
@@ -63,6 +76,19 @@ a {
 
 .scroll-container::-webkit-scrollbar {
   width: 0;
+}
+
+/* ═══ RESUME VIEWER ═══ */
+.cv-page-wrapper {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y pinch-zoom;
+}
+
+@media (max-width: 630px) {
+  .cv-page-wrapper .cv {
+    zoom: calc(100vw / 595);
+  }
 }
 
 /* ═══ CHAPTERS ═══ */

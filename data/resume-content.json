@@ -1,8 +1,8 @@
 {
   "_meta": {
     "source": "whoami",
-    "generated": "2026-03-26T04:41:39.420Z",
-    "warning": "This file is auto-generated. Do not edit manually."
+    "generated": "2026-09-02T02:30:00.000Z",
+    "warning": "Grounded rewrite 2026-09-02. whoami career files are stale; do not blindly re-sync them over this."
   },
   "header": {
     "name": "Edo Sulaiman",
@@ -13,19 +13,18 @@
     "email": "edosulai@icloud.com",
     "phone": "+62 851 67 300 100",
     "linkedin": "edosulaiman",
-    "location": "Ragunan, Jakarta"
+    "location": "Jakarta, Indonesia"
   },
-  "summary": "I deliver complete products (web, backend, mobile, infrastructure) at the speed of a small team. I built my own AI engineering system to make that possible. 3+ years shipping production systems in banking and finance (BRI, Kreditplus). I work across React, Go, Android, and cloud. What makes the pace possible is an AI system I built and maintain: model routing across providers, automated agents, persistent context across sessions and machines. Currently building the BRILink Mobile platform (BRI's agent banking app): e-commerce, Android onboarding, and ferry ticketing.",
+  "summary": "I ship production software in banking and finance — Go services, React/Next, Android — and I build the local AI operator stack I actually work with. 3+ years: QLola/QCash at Steradian, Kreditplus (ended January 2026), then BRI (BRiSpot/BNS and BRILink NPSO). The AI work is operator tooling on my own machines, not a claim that I am an ML researcher. Full-stack stays. The agent layer is how I move faster — it does not replace the stack.",
   "experiences": [
     {
       "role": "Golang Developer",
-      "company": "Bank Rakyat Indonesia (Brilink), via Indocyber Global Teknologi",
+      "company": "Bank Rakyat Indonesia (BRILink), via Indocyber Global Teknologi",
       "dates": "April 2026 to Present",
       "bullets": [
-        "Built full NPSO e-commerce backend (catalog, cart, orders) for the BRILink Mobile app in Go with Brimola architecture on Brigate integration layer",
-        "Developed Android Fast Onboarding v2 flow (KYB, eKYC, document upload, perjanjian kerjasama) for BRILink Mobile in Kotlin with Hilt/Dagger",
-        "Engineered ASDP ferry ticketing system for BRILink Mobile with unit tests achieving 92%+ coverage",
-        "Delivered 387 commits across 3 modules of the BRILink Mobile platform (e-commerce, ticketing, mobile app) in 4 months"
+        "Go backend for NPSO catalog and cart on BRILink Mobile, a live banking ecommerce surface (Brimola / Brigate)",
+        "Service work on a production BRI agent-banking app — company code stays private",
+        "Day-to-day stack: Go, gRPC, PostgreSQL, internal BRI integration layers"
       ]
     },
     {
@@ -33,10 +32,10 @@
       "company": "Bank Rakyat Indonesia (BRiSpot / BNS), via Indocyber Global Teknologi",
       "dates": "January 2026 to March 2026",
       "bullets": [
-        "Engineered backend microservices for the BRiSpot / BNS ecosystem across mobile-banking-adjacent environments",
-        "Drove migration from scattered DTOs to centralized protobuf contracts and established shared Kafka event repositories",
-        "Aligned service boundaries and integration patterns across 20+ repositories in the BNS ecosystem",
-        "Built centralized external service integration layers for CISO, Bristars, EDM, Zoloz, and OIDC services"
+        "Backend microservices for the BRiSpot / BNS ecosystem",
+        "Migration from scattered DTOs toward centralized protobuf contracts and shared Kafka event repositories",
+        "Service-boundary and integration-pattern alignment across the BNS ecosystem",
+        "External integration layers touching CISO, Bristars, EDM, Zoloz, and OIDC paths"
       ]
     },
     {
@@ -44,10 +43,10 @@
       "company": "PT KB Finansia Multifinance (Kreditplus), via SIGMATECH",
       "dates": "July 2025 to January 2026",
       "bullets": [
-        "Delivered backend systems for finance-domain database migration from SQL Server and MySQL to PostgreSQL",
-        "Maintained backward-compatible APIs while adapting business logic for PostgreSQL schema differences",
-        "Strengthened observability through request tracing, standardized error payloads, and 75%+ unit test coverage",
-        "Supported account, transaction, and insurance-related service flows with reliability improvements"
+        "Finance-domain backend during a SQL Server / MySQL to PostgreSQL migration",
+        "Kept APIs backward-compatible while adapting business logic to the PostgreSQL schema",
+        "Observability: request tracing, standardized error payloads, and unit-test coverage on service flows",
+        "Account, transaction, and insurance-related service work — this role ended in January 2026"
       ]
     },
     {
@@ -55,13 +54,12 @@
       "company": "Bank Rakyat Indonesia (QLola Cash Management / QCash), via Steradian Data Optima",
       "dates": "May 2023 to July 2025",
       "bullets": [
-        "Led frontend-heavy development of enterprise cash management UI using React, Next.js, and TypeScript across a 525-repo ecosystem",
-        "Architected and executed microfrontend migration using Module Federation, decomposing monolithic frontend into independently deployable micro-apps",
-        "Built component-driven UI with design system patterns, Storybook documentation, and responsive enterprise dashboards",
-        "Engineered state management architecture using Zustand and React Query for complex financial data flows",
-        "Developed full-stack payroll transfer features including mass transfer, multi-currency international transfers, and bulk upload",
-        "Implemented GnuPG and AES 128/256 encryption for secure payroll file handling and reporting",
-        "Optimized data access by replacing GORM with native SQL queries and migrated logging from logrus to zap with Kibana integration"
+        "Frontend-heavy work on enterprise cash-management UI using React, Next.js, and TypeScript",
+        "Microfrontend migration using Module Federation — independently deployable micro-apps on a live banking surface",
+        "Component-driven UI, design-system patterns, Storybook, and responsive enterprise dashboards",
+        "State management with Zustand and React Query for financial data flows",
+        "Payroll transfer features: mass transfer, multi-currency international transfers, bulk upload",
+        "GnuPG and AES 128/256 for secure payroll file handling; native SQL in place of GORM; logging moved from logrus to zap"
       ]
     }
   ],
@@ -75,19 +73,19 @@
     "gpa": "3.6"
   },
   "highlights": [
-    "Delivered 387 commits across 3 modules of the BRILink Mobile platform in 4 months (Go backend + Kotlin Android + ticketing)",
-    "Built NPSO e-commerce backend and ASDP ferry ticketing for BRILink Mobile with 92%+ test coverage",
-    "Led microfrontend architecture migration at BRI QLola using Module Federation",
-    "Delivered enterprise systems across 80+ repositories spanning banking, finance, and AI domains",
-    "Engineered transaction-critical payroll, encryption, and mass transfer workflows for BRI's QLola / QCash platform",
-    "Drove protobuf standardization and endpoint alignment across 20+ repositories in BNS ecosystem",
-    "Built custom AI infrastructure: personal model router, multi-agent orchestration, cross-machine context system"
+    "Go backend for NPSO catalog and cart on a live BRI BRILink ecommerce surface",
+    "Protobuf and Kafka contract work across the BRiSpot / BNS ecosystem",
+    "Microfrontend migration with Module Federation on BRI QLola / QCash",
+    "Payroll, encryption, and mass-transfer workflows on a live cash-management product",
+    "Local operator tooling: computer-use on macOS, MCP, persistent context across machines",
+    "Kreditplus finance backend, July 2025 to January 2026 — not current work"
   ],
   "coreSkills": [
     "React",
     "Next.js",
     "TypeScript",
     "Golang",
+    "Kotlin",
     "Microfrontend",
     "Module Federation",
     "Microservices",
@@ -111,21 +109,21 @@
     "Bamboo",
     "Swagger",
     "Distributed Systems",
-    "Secure Payment Systems",
-    "Component-Driven UI",
-    "Responsive Design"
+    "MCP",
+    "Computer Use"
   ],
   "techStack": {
     "Languages and Frameworks": [
       "React, Next.js, TypeScript, JavaScript",
-      "Golang, Python, Django, Express.js, React Native"
+      "Golang, Kotlin, Python"
     ],
     "Architecture and Platforms": [
       "Microfrontend (Module Federation), Microservices, RESTful APIs, gRPC",
       "Zustand, React Query, Storybook, Tailwind CSS",
       "PostgreSQL, MySQL, SQL Server, MongoDB, Redis, Elasticsearch",
-      "RabbitMQ, MinIO, Docker, OpenShift, Jenkins, Bamboo, Grafana, Kibana",
+      "Kafka, Docker, OpenShift, Jenkins, Bamboo, Grafana, Kibana",
       "Protocol Buffers, Swagger, GitHub, Bitbucket, Nx, Turborepo",
+      "Local computer-use, MCP",
       "Indonesia (Native Speaker)",
       "English (Working Proficiency)"
     ]

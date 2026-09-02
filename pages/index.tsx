@@ -11,7 +11,7 @@ const CHAPTERS = [
   { id: 'banking', label: 'Banking', accent: '#4a9eff' },
   { id: 'migration', label: 'Migration', accent: '#4ade80' },
   { id: 'architecture', label: 'Architecture', accent: '#818cf8' },
-  { id: 'future', label: 'AI-First', accent: '#c084fc' },
+  { id: 'future', label: 'Operator', accent: '#c084fc' },
   { id: 'stack', label: 'Stack', accent: '#f472b6' },
   { id: 'contact', label: 'Contact', accent: '#fbbf24' },
 ]
@@ -107,7 +107,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Edo Sulaiman — Building banking-grade and AI-first systems</title>
+        <title>Edo Sulaiman — Full-stack engineer, banking systems, local AI operator tooling</title>
         <meta name="description" content={hero.subheadline} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -320,8 +320,8 @@ export default function Home() {
               <h2 className="reveal font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-2 leading-snug">
                 {experiences[0].role}
               </h2>
-              <p className="reveal font-mono text-xs text-indigo-400/50 mb-1">Bank Rakyat Indonesia, via Indocyber Global Teknologi</p>
-              <p className="reveal font-mono text-xs text-white/25 mb-6">January 2026 to Present</p>
+              <p className="reveal font-mono text-xs text-indigo-400/50 mb-1">{experiences[0].company}</p>
+              <p className="reveal font-mono text-xs text-white/25 mb-6">{experiences[0].dates}</p>
               <p className="reveal text-white/55 leading-relaxed mb-6 text-[15px]">
                 {selectedWork[1].description}
               </p>
@@ -355,15 +355,20 @@ export default function Home() {
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-10 w-full grid md:grid-cols-[180px_1fr] gap-4 sm:gap-8 md:gap-16 items-center">
             <div className="reveal flex items-baseline gap-3 md:block">
               <span className="font-serif text-5xl sm:text-7xl md:text-9xl text-purple-500/10 leading-none">05</span>
-              <span className="font-mono text-xs tracking-widest text-purple-500/40 uppercase md:mt-2 md:block">AI-First</span>
+              <span className="font-mono text-xs tracking-widest text-purple-500/40 uppercase md:mt-2 md:block">Operator</span>
             </div>
             <div className="glass-frosted p-5 sm:p-8 md:p-12">
               <h2 className="reveal font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-6 leading-snug">
-                The Future Machine
+                The operator layer
               </h2>
               <p className="reveal text-white/55 leading-relaxed mb-5 text-[15px]">
                 {selectedWork[3].description}
               </p>
+              {selectedWork[4] ? (
+                <p className="reveal text-white/55 leading-relaxed mb-5 text-[15px]">
+                  {selectedWork[4].description}
+                </p>
+              ) : null}
               <p className="reveal text-white/55 leading-relaxed mb-8 text-[15px]">
                 {about.paragraphs[2]}
               </p>

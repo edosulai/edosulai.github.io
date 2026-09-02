@@ -47,8 +47,12 @@ export default function Resume({ cvStyles, cvBody }: Readonly<ResumeProps>) {
       <Head>
         <title>Resume - Edo Sulaiman | Full-Stack Engineer</title>
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        />
+        <meta
           name="description"
-          content="Experienced Full-Stack Engineer with expertise in microfrontend and microservices architectures."
+          content="Full-stack engineer. Banking and finance systems in Go, React, and Android. Local AI operator tooling."
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -72,6 +76,11 @@ export default function Resume({ cvStyles, cvBody }: Readonly<ResumeProps>) {
           __html: `
             ${cvStyles}
 
+            html, body {
+              overflow: auto !important;
+              height: auto !important;
+            }
+
             @media print {
               @page { margin: 0; }
               body {
@@ -83,6 +92,7 @@ export default function Resume({ cvStyles, cvBody }: Readonly<ResumeProps>) {
                 background: none !important;
                 padding: 0 !important;
                 min-height: auto !important;
+                overflow: visible !important;
               }
             }
           `,
