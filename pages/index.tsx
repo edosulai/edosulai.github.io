@@ -349,7 +349,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ──────────────────── CHAPTER 5: AI-FIRST ──────────────────── */}
+        {/* ──────────────────── CHAPTER 5: OPERATOR ──────────────────── */}
         <section className="chapter bg-future" data-chapter="5">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-purple-500/[0.04] blur-[150px]" />
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-10 w-full grid md:grid-cols-[180px_1fr] gap-4 sm:gap-8 md:gap-16 items-center">
@@ -365,9 +365,14 @@ export default function Home() {
                 {selectedWork[3].description}
               </p>
               {selectedWork[4] ? (
-                <p className="reveal text-white/55 leading-relaxed mb-5 text-[15px]">
-                  {selectedWork[4].description}
-                </p>
+                <div className="reveal mb-5">
+                  <p className="font-mono text-xs tracking-widest text-purple-400/50 uppercase mb-2">
+                    {selectedWork[4].title}
+                  </p>
+                  <p className="text-white/55 leading-relaxed text-[15px]">
+                    {selectedWork[4].description}
+                  </p>
+                </div>
               ) : null}
               <p className="reveal text-white/55 leading-relaxed mb-8 text-[15px]">
                 {about.paragraphs[2]}
