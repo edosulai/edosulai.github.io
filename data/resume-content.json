@@ -77,7 +77,7 @@
     "Protobuf and Kafka contract work across the BRiSpot / BNS ecosystem",
     "Microfrontend migration with Module Federation on BRI QLola / QCash",
     "Payroll, encryption, and mass-transfer workflows on a live cash-management product",
-    "Local operator tooling: computer-use on macOS, MCP, persistent context across machines",
+    "Local AI agent workflows: computer-use on macOS, MCP, persistent context across machines",
     "Kreditplus finance backend, July 2025 to January 2026 — not current work"
   ],
   "coreSkills": [
@@ -109,7 +109,19 @@
     "Bamboo",
     "Swagger",
     "Distributed Systems",
+    "Hermes Agent",
+    "Cursor",
+    "Paseo",
+    "OpenClaw",
+    "Grok bot",
+    "Claude Code",
+    "Codex",
     "MCP",
+    "Graphify",
+    "OmniRoute",
+    "Prompt Engineering",
+    "Context Engineering",
+    "Harness Engineering",
     "Computer Use"
   ],
   "techStack": {
@@ -123,9 +135,15 @@
       "PostgreSQL, MySQL, SQL Server, MongoDB, Redis, Elasticsearch",
       "Kafka, Docker, OpenShift, Jenkins, Bamboo, Grafana, Kibana",
       "Protocol Buffers, Swagger, GitHub, Bitbucket, Nx, Turborepo",
-      "Local computer-use, MCP",
       "Indonesia (Native Speaker)",
       "English (Working Proficiency)"
+    ],
+    "AI Coding & Agents": [
+      "Hermes Agent, Cursor, Paseo, OpenClaw, Grok bot, Claude Code, Codex",
+      "MCP, Graphify, OmniRoute"
+    ],
+    "Agent Engineering": [
+      "Prompt engineering, context engineering, harness engineering"
     ]
   }
 }

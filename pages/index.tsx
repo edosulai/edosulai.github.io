@@ -11,14 +11,14 @@ const CHAPTERS = [
   { id: 'banking', label: 'Banking', accent: '#4a9eff' },
   { id: 'migration', label: 'Migration', accent: '#4ade80' },
   { id: 'architecture', label: 'Architecture', accent: '#818cf8' },
-  { id: 'future', label: 'Operator', accent: '#c084fc' },
+  { id: 'future', label: 'Agents', accent: '#c084fc' },
   { id: 'stack', label: 'Stack', accent: '#f472b6' },
   { id: 'contact', label: 'Contact', accent: '#fbbf24' },
 ]
 
 const DYNAMIC_WORDS = [
   'Systems', 'Dreams', 'Transactions', 'Growth',
-  'Contracts', 'Intelligence', 'Tools', 'Connections',
+  'Contracts', 'Agents', 'Tools', 'Connections',
 ]
 
 export default function Home() {
@@ -107,7 +107,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Edo Sulaiman — Full-stack engineer, banking systems, local AI operator tooling</title>
+        <title>Edo Sulaiman — Full-stack engineer, banking systems, AI coding &amp; agents</title>
         <meta name="description" content={hero.subheadline} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -349,17 +349,17 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ──────────────────── CHAPTER 5: OPERATOR ──────────────────── */}
+        {/* ──────────────────── CHAPTER 5: AI AGENTS ──────────────────── */}
         <section className="chapter bg-future" data-chapter="5">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-purple-500/[0.04] blur-[150px]" />
           <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 md:px-10 w-full grid md:grid-cols-[180px_1fr] gap-4 sm:gap-8 md:gap-16 items-center">
             <div className="reveal flex items-baseline gap-3 md:block">
               <span className="font-serif text-5xl sm:text-7xl md:text-9xl text-purple-500/10 leading-none">05</span>
-              <span className="font-mono text-xs tracking-widest text-purple-500/40 uppercase md:mt-2 md:block">Operator</span>
+              <span className="font-mono text-xs tracking-widest text-purple-500/40 uppercase md:mt-2 md:block">Agents</span>
             </div>
             <div className="glass-frosted p-5 sm:p-8 md:p-12">
               <h2 className="reveal font-serif text-2xl sm:text-3xl md:text-4xl text-white mb-6 leading-snug">
-                The operator layer
+                AI coding &amp; agent engineering
               </h2>
               <p className="reveal text-white/55 leading-relaxed mb-5 text-[15px]">
                 {selectedWork[3].description}

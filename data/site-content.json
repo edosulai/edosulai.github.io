@@ -6,30 +6,30 @@
   },
   "hero": {
     "name": "Edo Sulaiman",
-    "headline": "I ship production software in banking and finance — and the local AI operator stack I actually work with.",
-    "subheadline": "Full-stack engineer. Go, React/Next, Android. Local computer-use, MCP, and persistent context across machines.",
-    "positioningStrip": "Full-stack stays. The agent layer is how I move faster — it does not replace the stack.",
-    "supportingLine": "3+ years shipping production systems in banking and finance (QLola, Kreditplus, BRI). I work across React, Go, and Android. The AI work is operator tooling on my own machines, not a claim that I am an ML researcher."
+    "headline": "I ship production software in banking and finance, and I use AI coding agents and agent engineering to move faster.",
+    "subheadline": "Full-stack engineer. Go, React/Next, Android. AI coding agents, computer-use, MCP, and persistent context across machines.",
+    "positioningStrip": "Full-stack stays. The agent layer is how I move faster; it does not replace the stack.",
+    "supportingLine": "3+ years shipping production systems in banking and finance (QLola, Kreditplus, BRI). I work across React, Go, and Android. My AI work is practical engineering on my own machines, not an ML research claim."
   },
   "highlights": [
     "~3 years of professional experience",
     "Banking and finance production systems",
     "Go, React/Next, Android",
-    "Local AI operator tooling"
+    "AI coding & agent engineering"
   ],
   "focusAreas": [
     "Frontend architecture",
     "Microfrontend systems",
     "Distributed contracts",
     "Banking-grade integrations",
-    "Local AI operator tooling"
+    "AI coding & agent engineering"
   ],
   "about": {
     "sectionTitle": "From the edges of technology into systems that carry real weight.",
     "paragraphs": [
       "I started from the edges of technology, between urban memory, village roots, warnets, second-hand PCs, failed early attempts, and a long self-taught path. That path eventually led me into banking-grade systems, finance-domain services, and architecture work spanning web, backend, mobile, and infrastructure.",
-      "Today I ship whatever layer the product needs: React/Next.js, Golang services, Android at the depth the job requires. The pace comes from a local operator stack I actually run: model routing, computer-use on macOS, MCP hosts, persistent context across sessions and machines.",
-      "Full-stack stays. The agent layer is how I move faster — it does not replace the stack. I am not an ML researcher. I build and operate the tools that sit next to the product."
+      "Today I ship whatever layer the product needs: React/Next.js, Go services, or Android. My day-to-day AI system includes Hermes Agent, Cursor, coding agents, computer-use on macOS, MCP, and persistent context across sessions and machines.",
+      "Full-stack stays. The agent layer is how I move faster; it does not replace the stack. I build and operate tools beside the product. I am not an ML researcher."
     ]
   },
   "selectedWork": [
@@ -46,8 +46,8 @@
       "description": "Finance backend at SIGMATECH / Kreditplus, July 2025 to January 2026 — not a 2026 job. Database migration toward PostgreSQL, backward-compatible APIs, observability, and test coverage on account and transaction flows."
     },
     {
-      "title": "Local operator tooling",
-      "description": "The public slice is silenthand-cua: an unofficial Computer Use host for a local Mac — click, type, and read AX trees without stealing focus. Around it: MCP hosts, persistent context across machines, and the agent loop I actually work in. Not an ML research claim."
+      "title": "AI coding & agents",
+      "description": "I use Hermes Agent, Cursor, Paseo, OpenClaw, Grok bot, Claude Code, Codex, MCP, Graphify, and OmniRoute on my own machines. The engineering practice around them covers prompt, context, and harness engineering. This is practical product engineering, not ML research."
     },
     {
       "title": "Momena (Pinturakik)",
@@ -55,7 +55,7 @@
     }
   ],
   "selectedWorkMeta": {
-    "sectionTitle": "Work shaped by complete product delivery across banking, finance, and the operator layer next to it.",
+    "sectionTitle": "Work shaped by complete product delivery across banking, finance, and AI-assisted engineering.",
     "sectionSubtitle": "The through-line is consistent: ship the whole product, not just a layer."
   },
   "philosophy": {
@@ -63,7 +63,7 @@
     "body": "I care less about flashy software and more about systems that become trustworthy, calm, and almost invisible. The best technology does not demand constant attention. It carries complexity quietly."
   },
   "contact": {
-    "cta": "If you need complete product delivery across web, backend, or mobile — with an operator stack that does not replace the engineer — I am interested in problems where one person with the right tools can replace a team.",
+    "cta": "If you need complete product delivery across web, backend, or mobile, with an AI engineering workflow that stays accountable to the engineer, I am interested in problems that need one person to own the path from architecture to delivery.",
     "email": "edosulai@icloud.com"
   },
   "socialLinks": [
