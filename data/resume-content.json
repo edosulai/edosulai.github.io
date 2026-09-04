@@ -63,6 +63,20 @@
       ]
     }
   ],
+  "projects": [
+    {
+      "name": "BRILink / NPSO",
+      "url": "https://bri.co.id",
+      "dates": "April 2026 to Present",
+      "stack": "Microservice, Golang, gRPC, PostgreSQL, Brimola, Brigate",
+      "summary": "BRILink Mobile is Bank Rakyat Indonesia's agent-banking app. NPSO is the live ecommerce surface on that app — catalog, cart, and orders — built in Go on Brimola / Brigate.",
+      "features": [
+        "Go backend for NPSO catalog, cart, and order flows on BRILink Mobile",
+        "Brimola / Brigate integration with gRPC and internal BRI contracts",
+        "Production Go, gRPC, and PostgreSQL work on the agent-banking app — company code stays private"
+      ]
+    }
+  ],
   "education": {
     "school": "University of Putra Indonesia YPTK Padang",
     "schoolUrl": "https://upiyptk.ac.id",
