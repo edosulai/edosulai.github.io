@@ -15,15 +15,15 @@
     "linkedin": "edosulaiman",
     "location": "Jakarta, Indonesia"
   },
-  "summary": "I ship production software in banking and finance — Go services, React/Next, Android — and I use AI coding agents in my day-to-day work. 3+ years: QLola/QCash at Steradian, Kreditplus (ended January 2026), then BRI (BRiSpot/BNS and BRILink NPSO). The AI work is practical engineering on my own machines, not a claim that I am an ML researcher. Full-stack stays. The agent layer is how I move faster — it does not replace the stack.",
+  "summary": "I ship production software in banking and finance — Go services, React/Next, Android — and I use AI coding agents in my day-to-day work. 3+ years: QLola/QCash at Steradian, Kreditplus (ended January 2026), then BRI (BRiSpot/BNS and BRILink Mobile). The AI work is practical engineering on my own machines, not a claim that I am an ML researcher. Full-stack stays. The agent layer is how I move faster — it does not replace the stack.",
   "experiences": [
     {
       "role": "Golang Developer",
       "company": "Bank Rakyat Indonesia (BRILink), via Indocyber Global Teknologi",
       "dates": "April 2026 to Present",
       "bullets": [
-        "Go backend for NPSO catalog and cart on BRILink Mobile, a live banking ecommerce surface (Brimola / Brigate)",
-        "Service work on a production BRI agent-banking app — company code stays private",
+        "Go backend for Brimola NPSO catalog and cart on BRILink Mobile, via Brigate. NPSO is Brimola's non-subsidized product type (PSO is subsidized)",
+        "This work is Brimola NPSO only — other BRILink products are not claimed; company code stays private",
         "Day-to-day stack: Go, gRPC, PostgreSQL, internal BRI integration layers"
       ]
     },
@@ -65,15 +65,15 @@
   ],
   "projects": [
     {
-      "name": "BRILink / NPSO",
+      "name": "BRILink Mobile — Brimola NPSO",
       "url": "https://bri.co.id",
       "dates": "April 2026 to Present",
       "stack": "Microservice, Golang, gRPC, PostgreSQL, Brimola, Brigate",
-      "summary": "BRILink Mobile is Bank Rakyat Indonesia's agent-banking app. NPSO is the live ecommerce surface on that app — catalog, cart, and orders — built in Go on Brimola / Brigate.",
+      "summary": "BRILink Mobile is Bank Rakyat Indonesia's agent-banking app. Brimola is one product on that app. NPSO is Brimola's non-subsidized product type; PSO is the subsidized type. This work is Brimola NPSO only — not a name for BRILink, and not a claim on other BRILink products.",
       "features": [
-        "Go backend for NPSO catalog, cart, and order flows on BRILink Mobile",
-        "Brimola / Brigate integration with gRPC and internal BRI contracts",
-        "Production Go, gRPC, and PostgreSQL work on the agent-banking app — company code stays private"
+        "Go backend for Brimola NPSO catalog, cart, and order flows on BRILink Mobile",
+        "Brigate integration for Brimola NPSO with gRPC and internal BRI contracts",
+        "Production Go, gRPC, and PostgreSQL work for Brimola NPSO only — company code stays private"
       ]
     }
   ],
@@ -87,7 +87,7 @@
     "gpa": "3.6"
   },
   "highlights": [
-    "Go backend for NPSO catalog and cart on a live BRI BRILink ecommerce surface",
+    "Go backend for Brimola NPSO catalog and cart on BRILink Mobile",
     "Protobuf and Kafka contract work across the BRiSpot / BNS ecosystem",
     "Microfrontend migration with Module Federation on BRI QLola / QCash",
     "Payroll, encryption, and mass-transfer workflows on a live cash-management product",
