@@ -39,7 +39,7 @@
     },
     {
       "title": "BRI BRILink + BRiSpot/BNS",
-      "description": "BRILink Mobile (Apr 2026–present): Go backend for Brimola NPSO catalog and cart. NPSO is Brimola's non-subsidized product type, not another name for BRILink. Before that, BRiSpot/BNS (Jan–Mar 2026): protobuf contracts, Kafka event paths, and CISO-facing integration changes across the BNS ecosystem."
+      "description": "BRILink Mobile (Apr 2026–present): Go services for Brimola ecommerce (PSO and NPSO) and other BRILink backends such as webview integrations. NPSO is a Brimola product type, not another name for BRILink. Before that, BRiSpot/BNS (Jan–Mar 2026): protobuf contracts, Kafka event paths, and CISO-facing integration changes across the BNS ecosystem."
     },
     {
       "title": "Kreditplus",
