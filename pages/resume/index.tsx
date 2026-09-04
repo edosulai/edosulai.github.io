@@ -52,7 +52,7 @@ export default function Resume({ cvStyles, cvBody }: Readonly<ResumeProps>) {
         />
         <meta
           name="description"
-          content="Full-stack engineer. Banking and finance systems in Go, React, and Android. Local AI operator tooling."
+          content="Full-stack engineer. Banking and finance systems in Go, React, and Android. AI coding agents and agent engineering."
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
