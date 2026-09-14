@@ -1,6 +1,6 @@
 # edosulai.github.io
 
-Personal portfolio site with a cinematic scroll-storytelling experience and direct CV access.
+Personal portfolio site with a cinematic scroll-storytelling experience and direct CV access, showcasing full-stack engineering and **Methora (Universal Autonomous Operating Intelligence)**.
 
 ## Stack
 
