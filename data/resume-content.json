@@ -15,7 +15,7 @@
     "linkedin": "edosulaiman",
     "location": "Jakarta, Indonesia"
   },
-  "summary": "I ship production software in banking and finance — Go services, React/Next, Android — and I use AI coding agents in my day-to-day work. 3+ years: QLola/QCash at Steradian, Kreditplus (ended January 2026), then BRI (BRiSpot/BNS and BRILink Mobile). The AI work is practical engineering on my own machines, not a claim that I am an ML researcher. Full-stack stays. The agent layer is how I move faster — it does not replace the stack.",
+  "summary": "Full-Stack Engineer specializing in banking and financial systems (Go, React, Android) across BRILink Mobile Go (Brimola, BNS, QLola/QCash), paired with autonomous intelligence orchestration. 3+ years shipping production systems. Creator of Methora (Universal Autonomous Operating Intelligence) — an open-domain autonomous orchestrator connecting multi-node Mac mesh (Pro & Air), Grok Bot VM (cursor), and mobile (Paseo). Day-to-day agent engineering across Hermes Agent, Cursor, Claude Code, Codex, MCP, Graphify, and OmniRoute. Full-stack stays. Practical engineering on own machines, not an ML research claim.",
   "experiences": [
     {
       "role": "Golang Developer",
@@ -91,8 +91,8 @@
     "Protobuf and Kafka contract work across the BRiSpot / BNS ecosystem",
     "Microfrontend migration with Module Federation on BRI QLola / QCash",
     "Payroll, encryption, and mass-transfer workflows on a live cash-management product",
-    "Local AI agent workflows: computer-use on macOS, MCP, persistent context across machines",
-    "Kreditplus finance backend, July 2025 to January 2026 — not current work"
+    "Methora (Universal Autonomous Operating Intelligence) orchestrating multi-node Mac mesh, Grok Bot VM, and mobile",
+    "Kreditplus finance backend, July 2025 to January 2026 — ended January, not active work"
   ],
   "coreSkills": [
     "React",
@@ -133,6 +133,7 @@
     "MCP",
     "Graphify",
     "OmniRoute",
+    "Methora",
     "Prompt Engineering",
     "Context Engineering",
     "Harness Engineering",
