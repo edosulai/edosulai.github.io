@@ -52,7 +52,7 @@ export default function Resume({ cvStyles, cvBody }: Readonly<ResumeProps>) {
         />
         <meta
           name="description"
-          content="Full-stack engineer. Banking and finance systems in Go, React, and Android. AI coding agents and agent engineering."
+          content="Full-Stack Engineer specializing in banking and financial systems (Go, React, Android) across BRILink Mobile Go, BNS, and QLola/QCash. Creator of Methora (Universal Autonomous Operating Intelligence)."
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
